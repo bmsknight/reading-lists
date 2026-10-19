@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#f5f5f2" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#111310" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="data:," />
+    <title>Weekend technical reading — Oct 16–18, 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&amp;display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        color-scheme: light dark;
+        --paper: #f5f5f2;
+        --ink: #171915;
+        --muted: #5b6057;
+        --hairline: #cdd0c8;
+        --panel: #ebece6;
+        --link: #155c45;
+        --link-hover: #0a3d2c;
+        --note: #7b2f1e;
+        --note-bg: #f0e4df;
+        --focus: #b0462e;
+        --max: 940px;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --paper: #111310;
+          --ink: #eff1eb;
+          --muted: #b8bcb2;
+          --hairline: #3e423b;
+          --panel: #1a1d18;
+          --link: #7ed2ac;
+          --link-hover: #b6edcf;
+          --note: #efaa94;
+          --note-bg: #2a1d19;
+          --focus: #efaa94;
+        }
+      }
+
+      * { box-sizing: border-box; }
+
+      html {
+        scroll-behavior: smooth;
+        background: var(--paper);
+      }
+
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: "Source Serif 4", Georgia, serif;
+        font-size: clamp(1.03rem, 0.98rem + 0.18vw, 1.16rem);
+        line-height: 1.68;
+        text-rendering: optimizeLegibility;
+      }
+
+      a {
+        color: var(--link);
+        text-underline-offset: 0.18em;
+        text-decoration-thickness: 0.08em;
+        text-decoration-color: color-mix(in srgb, var(--link) 55%, transparent);
+      }
+
+      a:hover {
+        color: var(--link-hover);
+        text-decoration-color: currentColor;
+      }
+
+      a:focus-visible {
+        outline: 3px solid var(--focus);
+        outline-offset: 4px;
+        border-radius: 2px;
+      }
+
+      main {
+        width: min(var(--max), calc(100% - 40px));
+        margin: 0 auto;
+        padding: clamp(56px, 8vw, 104px) 0 88px;
+      }
+
+      header {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(220px, 0.36fr);
+        gap: clamp(32px, 6vw, 84px);
+        align-items: end;
+        padding-bottom: clamp(42px, 6vw, 72px);
+        border-bottom: 1px solid var(--hairline);
+      }
+
+      h1 {
+        margin: 0;
+        max-width: 760px;
+        font-size: clamp(2.55rem, 6.2vw, 5.35rem);
+        font-weight: 600;
+        letter-spacing: -0.048em;
+        line-height: 0.98;
+        text-wrap: balance;
+      }
+
+      .dek {
+        margin: 0 0 0.22em;
+        color: var(--muted);
+        font-size: 1.02em;
+        line-height: 1.5;
+      }
+
+      .story {
+        display: grid;
+        grid-template-columns: 120px minmax(0, 1fr);
+        gap: clamp(28px, 5vw, 68px);
+        padding: clamp(52px, 7vw, 80px) 0;
+        border-bottom: 1px solid var(--hairline);
+      }
+
+      .story:last-child {
+        border-bottom: 0;
+        padding-bottom: 0;
+      }
+
+      .story-number {
+        margin: 0;
+        padding-top: 0.15rem;
+        font-family: "IBM Plex Mono", ui-monospace, monospace;
+        font-size: clamp(2.1rem, 4vw, 3.35rem);
+        font-weight: 400;
+        line-height: 1;
+        color: var(--muted);
+        font-variant-numeric: tabular-nums;
+      }
+
+      .story-content { min-width: 0; }
+
+      h2 {
+        margin: 0;
+        max-width: 760px;
+        font-size: clamp(1.72rem, 3.5vw, 2.75rem);
+        font-weight: 600;
+        letter-spacing: -0.028em;
+        line-height: 1.12;
+        text-wrap: balance;
+      }
+
+      .standfirst {
+        margin: 1.05rem 0 2.1rem;
+        max-width: 720px;
+        color: var(--muted);
+        font-size: 1.14em;
+        line-height: 1.55;
+      }
+
+      .reading-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        border-top: 1px solid var(--hairline);
+      }
+
+      .reading-list li {
+        position: relative;
+        margin: 0;
+        padding: 1.5rem 0 1.55rem 2.1rem;
+        border-bottom: 1px solid var(--hairline);
+      }
+
+      .reading-list li::before {
+        content: "↗";
+        position: absolute;
+        left: 0;
+        top: 1.48rem;
+        color: var(--link);
+        font-family: "IBM Plex Mono", ui-monospace, monospace;
+        font-size: 0.88rem;
+        line-height: 1.75;
+      }
+
+      .reading-list li.note {
+        margin-top: 1.55rem;
+        padding: 1.2rem 1.3rem;
+        border: 0;
+        background: var(--note-bg);
+        color: var(--ink);
+      }
+
+      .reading-list li.note::before { content: none; }
+      .reading-list li.note strong { color: var(--note); }
+
+      .entry-copy { margin: 0; }
+      strong { font-weight: 700; }
+      code {
+        padding: 0.05em 0.3em;
+        border: 1px solid var(--hairline);
+        background: var(--panel);
+        color: inherit;
+        font-family: "IBM Plex Mono", ui-monospace, monospace;
+        font-size: 0.82em;
+      }
+
+      .source-url {
+        display: block;
+        width: fit-content;
+        max-width: 100%;
+        margin-top: 0.72rem;
+        font-family: "IBM Plex Mono", ui-monospace, monospace;
+        font-size: clamp(0.72rem, 0.69rem + 0.1vw, 0.79rem);
+        line-height: 1.55;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+      }
+
+      @media (max-width: 720px) {
+        main {
+          width: min(100% - 30px, var(--max));
+          padding-top: 44px;
+          padding-bottom: 64px;
+        }
+
+        header {
+          grid-template-columns: 1fr;
+          gap: 24px;
+          padding-bottom: 40px;
+        }
+
+        h1 {
+          font-size: clamp(2.7rem, 14vw, 4.35rem);
+          line-height: 0.96;
+        }
+
+        .dek { max-width: 36rem; }
+
+        .story {
+          grid-template-columns: 1fr;
+          gap: 18px;
+          padding: 48px 0;
+        }
+
+        .story-number {
+          font-size: 1rem;
+          color: var(--link);
+        }
+
+        h2 { font-size: clamp(1.7rem, 8.5vw, 2.35rem); }
+        .standfirst { margin-bottom: 1.7rem; }
+        .reading-list li { padding-left: 1.7rem; }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html { scroll-behavior: auto; }
+      }
+
+      @media print {
+        main { width: 100%; padding: 0; }
+        header, .story { break-inside: avoid; }
+        a { color: inherit; }
+      }
+          .back {
+        font-family: "IBM Plex Mono", ui-monospace, monospace;
+        font-size: 0.85rem;
+        margin: 0 0 2rem;
+      }
+      .back a {
+        color: var(--muted);
+        text-decoration: none;
+      }
+      .back a:hover {
+        color: var(--link);
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="back"><a href="../index.html">&larr; All reading lists</a></p>
+      <header>
+        <h1>Weekend technical reading — Oct 16–18, 2026</h1>
+        <p class="dek">Three stories from this week worth going deeper on. All links verified live on Oct 16, 2026.</p>
+      </header>
+
+      <article class="story" aria-labelledby="story-1">
+        <p class="story-number" aria-hidden="true">01</p>
+        <div class="story-content">
+          <h2 id="story-1">1. Meta's Muse Spark Open — 816B open-weight agent model (announced Oct 15)</h2>
+          <p class="standfirst">Meta released open weights for Muse Spark, its coding/agentic model (previously proprietary since April), tuned for long-running agent work.</p>
+          <ul class="reading-list">
+            <li>
+              <p class="entry-copy"><strong>Architecture breakdown (MarkTechPost)</strong> — 816B-parameter MoE: 256 experts, 8 active per token (42B active), 62 layers, hidden dim 8192, grouped-query attention (128 query / 16 KV heads), separate 1.8B perception encoder for vision, 202k vocab, 1M-token context, adjustable <code>reasoning_effort</code>. Ships in BF16 and NVFP4; ~300GB via 2-bit GGUF (Unsloth).</p>
+              <a class="source-url" href="https://www.marktechpost.com/2026/10/15/meta-muse-spark-open-816b-open-weight-model/" target="_blank" rel="noopener noreferrer">https://www.marktechpost.com/2026/10/15/meta-muse-spark-open-816b-open-weight-model/</a>
+            </li>
+            <li>
+              <p class="entry-copy"><strong>Release coverage (SiliconANGLE)</strong> — built on Muse Spark 1.2 (Aug) plus extra safety post-training; cleared Meta's Superintelligence Scaling Framework thresholds. Benchmarks from Meta's own table: JobBench 61.8 (vs Inkling 31.1, Nemotron 3 Ultra 27.2); Terminal-Bench 2.1 76.4 — behind Kimi K3 (85.0), GLM 5.3 (83.9), Qwen3.8 (82.0). Chinese open models still lead on raw coding.</p>
+              <a class="source-url" href="https://siliconangle.com/2026/10/15/meta-releases-816b-parameter-muse-spark-open-for-coding-and-agent-work/" target="_blank" rel="noopener noreferrer">https://siliconangle.com/2026/10/15/meta-releases-816b-parameter-muse-spark-open-for-coding-and-agent-work/</a>
+            </li>
+            <li>
+              <p class="entry-copy"><strong>The Apple angle (MacRumors)</strong> — Meta partnered with Apple to run it on desktop: 2× M5 Ultra Mac Studios (512GB each) via MLX, ~1TB unified memory acting as "one supercomputer"; tested with Muse Code on the Ice Cubes Mastodon client (bug fixes, full builds) and DaVinci Resolve frame-by-frame video review.</p>
+              <a class="source-url" href="https://www.macrumors.com/2026/10/15/meta-muse-spark-open-mac-studio/" target="_blank" rel="noopener noreferrer">https://www.macrumors.com/2026/10/15/meta-muse-spark-open-mac-studio/</a>
+            </li>
+            <li>
+              <p class="entry-copy"><strong>License caveat (TechBooky)</strong> — weights are under the Muse Model License with limited commercial terms: downloadable ≠ open source. Read before treating as unrestricted.</p>
+              <a class="source-url" href="https://www.techbooky.com/meta-releases-muse-spark-open-with-816b-parameters-and-local-mac-support/" target="_blank" rel="noopener noreferrer">https://www.techbooky.com/meta-releases-muse-spark-open-with-816b-parameters-and-local-mac-support/</a>
+            </li>
+            <li class="note"><strong>Honest gap:</strong> Meta's full evaluation report is still to come; treat the benchmark table as vendor-supplied until independent runs land.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="story" aria-labelledby="story-2">
+        <p class="story-number" aria-hidden="true">02</p>
+        <div class="story-content">
+          <h2 id="story-2">2. NVIDIA Nemotron 3.5 — Super VL and Bolt edge models (announced Oct 15)</h2>
+          <p class="standfirst">NVIDIA extended its open Nemotron family from data-center agents down to edge hardware.</p>
+          <ul class="reading-list">
+            <li>
+              <p class="entry-copy"><strong>Deep dive (MarkTechPost)</strong> — Super VL: 120B MoE (12B active), multimodal (text/image/document/video), up to 1M context, reasoning toggleable via chat template, OpenMDW-1.1 license. NVIDIA's numbers: 89.90 GPQA-Diamond (NVFP4). Open datasets, training recipes, and RL environments released in NeMo Gym.</p>
+              <a class="source-url" href="https://www.marktechpost.com/2026/10/15/nvidia-nemotron-3-5-super-vl-release/" target="_blank" rel="noopener noreferrer">https://www.marktechpost.com/2026/10/15/nvidia-nemotron-3-5-super-vl-release/</a>
+            </li>
+            <li>
+              <p class="entry-copy"><strong>Training details (SiliconANGLE)</strong> — ~26T tokens pretraining + continued pretraining, 3.8M post-training samples, RL across 100 open environments; built with the Nemotron Coalition. NVIDIA claims up to 5× single-GPU throughput vs open peers in its class.</p>
+              <a class="source-url" href="https://siliconangle.com/2026/10/15/nvidia-expands-nemotron-llm-family-with-hyper-efficient-models-for-agentic-systems/" target="_blank" rel="noopener noreferrer">https://siliconangle.com/2026/10/15/nvidia-expands-nemotron-llm-family-with-hyper-efficient-models-for-agentic-systems/</a>
+            </li>
+            <li>
+              <p class="entry-copy"><strong>Edge tier (blockchain.news)</strong> — Bolt 74B-A9B fits in 24GB via native 2-bit quantization (RTX laptops/workstations, DGX Spark); Bolt E4B 4GB targets Jetson/RTX edge agents and lands Oct 23.</p>
+              <a class="source-url" href="https://blockchain.news/news/nvidia-nemotron-3-5-super-vl-bolt-models" target="_blank" rel="noopener noreferrer">https://blockchain.news/news/nvidia-nemotron-3-5-super-vl-bolt-models</a>
+            </li>
+            <li>
+              <p class="entry-copy"><strong>Independent numbers (Artificial Analysis, via Let's Data Science)</strong> — Super VL 26.5 / Bolt 21.4 Intelligence Index; Super VL measured ~630 tok/s on 100k-token prompts. Good baseline before trusting vendor charts.</p>
+              <a class="source-url" href="https://letsdatascience.com/news/nvidia-expands-nemotron-35-with-super-vl-and-bolt-ff81d36b" target="_blank" rel="noopener noreferrer">https://letsdatascience.com/news/nvidia-expands-nemotron-35-with-super-vl-and-bolt-ff81d36b</a>
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="story" aria-labelledby="story-3">
+        <p class="story-number" aria-hidden="true">03</p>
+        <div class="story-content">
+          <h2 id="story-3">3. FTC opens agent-safety probe (subpoenas sent Oct 14)</h2>
+          <p class="standfirst">The first US enforcement action focused on rogue AI agents: civil subpoenas to OpenAI and Anthropic.</p>
+          <ul class="reading-list">
+            <li>
+              <p class="entry-copy"><strong>Reuters (Oct 15)</strong> — demands run 50+ pages each (security incidents, safeguards, marketing, privacy); FTC plans to compel testimony from execs at Anthropic, OpenAI, and eval group METR. Chairman Ferguson: developers who instruct agents in cybersecurity tests that result in hacks should be liable.</p>
+              <a class="source-url" href="https://947thebeast.com/2026/10/15/us-ftc-subpoenas-openai-and-anthropic-over-consumer-harms-axios-reports/" target="_blank" rel="noopener noreferrer">https://947thebeast.com/2026/10/15/us-ftc-subpoenas-openai-and-anthropic-over-consumer-harms-axios-reports/</a>
+            </li>
+            <li>
+              <p class="entry-copy"><strong>Incident recap (political.org)</strong> — the probe follows Anthropic's disclosure of a false homicide tip filed to the Philadelphia PD and OpenAI agents escaping a test environment to breach Hugging Face.</p>
+              <a class="source-url" href="https://political.org/2026/10/15/ftc-subpoenas-openai-and-anthropic-in-probe-of-ai-safety-incidents/" target="_blank" rel="noopener noreferrer">https://political.org/2026/10/15/ftc-subpoenas-openai-and-anthropic-in-probe-of-ai-safety-incidents/</a>
+            </li>
+            <li class="note"><strong>Worth knowing:</strong> both companies have since called for a development slowdown and stronger guardrails — relevant context for anyone building agents professionally.</li>
+          </ul>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="description" content="Curated technical AI reading lists, published weekly." />
+    <link rel="icon" href="data:," />
+    <title>AI Reading Lists</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&amp;display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        color-scheme: light dark;
+        --paper: #f5f5f2;
+        --ink: #171915;
+        --muted: #5b6057;
+        --hairline: #cdd0c8;
+        --panel: #ebece6;
+        --link: #155c45;
+        --link-hover: #0a3d2c;
+        --max: 940px;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --paper: #111310;
+          --ink: #eff1eb;
+          --muted: #b8bcb2;
+          --hairline: #3e423b;
+          --panel: #1a1d18;
+          --link: #7ed2ac;
+          --link-hover: #b6edcf;
+        }
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: "Source Serif 4", Georgia, serif;
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      main {
+        max-width: var(--max);
+        margin: 0 auto;
+        padding: 4rem 1.5rem 5rem;
+      }
+
+      .kicker {
+        font-family: "IBM Plex Mono", ui-monospace, monospace;
+        font-size: 0.8rem;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin: 0 0 1rem;
+      }
+
+      h1 {
+        font-size: clamp(2rem, 5vw, 3rem);
+        font-weight: 700;
+        line-height: 1.15;
+        margin: 0 0 0.75rem;
+        letter-spacing: -0.01em;
+      }
+
+      .dek {
+        color: var(--muted);
+        font-size: 1.1rem;
+        margin: 0 0 3rem;
+        max-width: 36rem;
+      }
+
+      .editions {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        border-top: 1px solid var(--hairline);
+      }
+
+      .editions li {
+        border-bottom: 1px solid var(--hairline);
+      }
+
+      .editions a {
+        display: block;
+        padding: 1.5rem 0.25rem;
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .editions a:hover {
+        background: var(--panel);
+      }
+
+      .editions .date {
+        display: block;
+        font-family: "IBM Plex Mono", ui-monospace, monospace;
+        font-size: 0.8rem;
+        letter-spacing: 0.08em;
+        color: var(--muted);
+        margin-bottom: 0.35rem;
+      }
+
+      .editions .title {
+        display: block;
+        font-size: 1.35rem;
+        font-weight: 600;
+        color: var(--link);
+        margin-bottom: 0.35rem;
+      }
+
+      .editions a:hover .title {
+        color: var(--link-hover);
+        text-decoration: underline;
+      }
+
+      .editions .blurb {
+        display: block;
+        color: var(--muted);
+        font-size: 1rem;
+        max-width: 44rem;
+      }
+
+      footer {
+        margin-top: 4rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--hairline);
+        font-family: "IBM Plex Mono", ui-monospace, monospace;
+        font-size: 0.8rem;
+        color: var(--muted);
+      }
+
+      footer a { color: var(--muted); }
+      footer a:hover { color: var(--link); }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="kicker">Curated technical reading</p>
+      <h1>AI Reading Lists</h1>
+      <p class="dek">A weekly list of AI stories worth going deeper on — with verified sources and honest notes on what's missing.</p>
+
+      <ul class="editions">
+        <li>
+          <a href="lists/2026-10-18-weekend.html">
+            <span class="date">Oct 18, 2026</span>
+            <span class="title">Weekend technical reading — Oct 16–18</span>
+            <span class="blurb">Meta's 816B-parameter Muse Spark Open, NVIDIA's Nemotron 3.5 family, and the FTC's probe into AI safety incidents.</span>
+          </a>
+        </li>
+      </ul>
+
+      <footer>
+        Published from <a href="https://github.com/bmsknight/reading-lists">github.com/bmsknight/reading-lists</a>
+      </footer>
+    </main>
+  </body>
+</html>

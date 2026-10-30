@@ -1,0 +1,1153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="data:," />
+    <title>CX-5 and CX-30 2020–2022 Feature Matrix — Canada</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --bg: #f2f1ee;
+        --panel: #ffffff;
+        --panel-2: #e9e7e2;
+        --ink: #191a1e;
+        --ink-2: #4c4e55;
+        --ink-3: #83858d;
+        --line: #d8d5cf;
+        --line-strong: #b9b5ac;
+        --accent: #a6192e;
+        --accent-ink: #a6192e;
+        --yes-bg: #fbe9eb;
+        --yes-ink: #9c1226;
+        --yes-line: #e5a7b0;
+        --no-bg: #e6f2e7;
+        --no-ink: #1d6428;
+        --no-line: #a9cfae;
+        --std-ink: #1d6428;
+        --opt-bg: #fdf0d9;
+        --opt-ink: #8a5a00;
+        --opt-line: #e3c98f;
+        --new-bg: #e3ecfb;
+        --new-ink: #1c4f9e;
+        --new-line: #a9c2ec;
+        --unv-bg: #f3e8fb;
+        --unv-ink: #6d28a8;
+        --unv-line: #cfa9ec;
+        --group-bg: #26272c;
+        --group-ink: #f2f1ee;
+        --sticky-bg: #ffffff;
+        --chip-bg: #ffffff;
+        --shadow: 0 1px 2px rgba(20,20,25,.06), 0 8px 24px rgba(20,20,25,.06);
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #101114;
+          --panel: #1a1b1f;
+          --panel-2: #232429;
+          --ink: #ecebe8;
+          --ink-2: #b6b7bc;
+          --ink-3: #83858d;
+          --line: #33343a;
+          --line-strong: #4a4b52;
+          --accent: #e8606f;
+          --accent-ink: #f0838f;
+          --yes-bg: #3d1d23;
+          --yes-ink: #ff9aa6;
+          --yes-line: #6e323d;
+          --no-bg: #1d3320;
+          --no-ink: #8fd79a;
+          --no-line: #38573d;
+          --std-ink: #8fd79a;
+          --opt-bg: #3a2d12;
+          --opt-ink: #f0c569;
+          --opt-line: #66531f;
+          --new-bg: #1d2c47;
+          --new-ink: #9dbdf2;
+          --new-line: #38507c;
+          --unv-bg: #2e2140;
+          --unv-ink: #cfa9f5;
+          --unv-line: #54397a;
+          --group-bg: #e9e7e2;
+          --group-ink: #1c1d20;
+          --sticky-bg: #1a1b1f;
+          --chip-bg: #232429;
+          --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.35);
+        }
+      }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: "Barlow", system-ui, sans-serif;
+        font-size: 16.5px;
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+      }
+      .wrap { max-width: 1180px; margin: 0 auto; padding: 0 18px 72px; }
+      h1, h2, h3 { font-family: "Barlow Condensed", "Barlow", sans-serif; text-transform: uppercase; letter-spacing: .02em; margin: 0; }
+      a { color: var(--accent-ink); }
+      .num { font-variant-numeric: tabular-nums; }
+
+      /* ---------- header ---------- */
+      header.hero { padding: 34px 0 8px; }
+      .hero .kicker {
+        font-family: "Barlow Condensed", sans-serif; font-weight: 600; letter-spacing: .18em;
+        text-transform: uppercase; font-size: 13px; color: var(--accent-ink); margin: 0 0 6px;
+      }
+      .hero h1 { font-size: clamp(34px, 6vw, 54px); line-height: 1.02; font-weight: 700; }
+      .hero h1 .thin { font-weight: 500; color: var(--ink-2); }
+      .hero p.lede { max-width: 72ch; color: var(--ink-2); font-size: 17.5px; margin: 14px 0 0; }
+      .hero p.lede strong { color: var(--ink); }
+
+      .headline-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 26px 0 6px; }
+      .stat {
+        background: var(--panel); border: 1px solid var(--line); border-top: 3px solid var(--accent);
+        padding: 14px 16px 12px; box-shadow: var(--shadow);
+      }
+      .stat h3 { font-size: 15px; letter-spacing: .12em; color: var(--ink-3); font-weight: 600; }
+      .stat p { margin: 6px 0 0; font-size: 15.5px; line-height: 1.45; }
+      .stat p strong { font-weight: 700; }
+      @media (max-width: 900px) { .headline-grid { grid-template-columns: 1fr 1fr; } }
+      @media (max-width: 520px) { .headline-grid { grid-template-columns: 1fr; } }
+
+      /* ---------- sections ---------- */
+      section { margin-top: 46px; }
+      .sec-head { display: flex; align-items: baseline; gap: 14px; border-bottom: 2px solid var(--ink); padding-bottom: 8px; margin-bottom: 16px; flex-wrap: wrap; }
+      .sec-head h2 { font-size: clamp(24px, 3.6vw, 32px); font-weight: 700; }
+      .sec-head p { margin: 0; color: var(--ink-2); font-size: 15px; max-width: 62ch; }
+      .card { background: var(--panel); border: 1px solid var(--line); box-shadow: var(--shadow); }
+
+      /* ---------- legend ---------- */
+      .legend { display: flex; flex-wrap: wrap; gap: 8px 20px; padding: 12px 16px; font-size: 14.5px; color: var(--ink-2); align-items: center; }
+      .legend .lg { display: inline-flex; align-items: center; gap: 7px; }
+
+      /* ---------- badges & cells ---------- */
+      .b { display: inline-block; font-family: "Barlow Condensed", sans-serif; font-weight: 700; letter-spacing: .06em; font-size: 13.5px; line-height: 1; padding: 4px 8px 3px; border: 1px solid; border-radius: 3px; text-transform: uppercase; white-space: nowrap; }
+      .b-yes { background: var(--yes-bg); color: var(--yes-ink); border-color: var(--yes-line); }
+      .b-no { background: var(--no-bg); color: var(--no-ink); border-color: var(--no-line); }
+      .b-opt { background: var(--opt-bg); color: var(--opt-ink); border-color: var(--opt-line); }
+      .b-new { background: var(--new-bg); color: var(--new-ink); border-color: var(--new-line); }
+      .b-unv { background: var(--unv-bg); color: var(--unv-ink); border-color: var(--unv-line); }
+      .b-na { background: transparent; color: var(--ink-3); border-color: var(--line); }
+      .c-std { color: var(--std-ink); font-weight: 700; font-size: 17px; }
+      .c-dash { color: var(--ink-3); }
+      .cell-note { display: block; font-size: 12.5px; color: var(--ink-3); line-height: 1.3; margin-top: 2px; font-weight: 400; }
+      td .b + .cell-note { margin-top: 4px; }
+
+      /* ---------- CD at a glance ---------- */
+      .glance-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+      @media (max-width: 760px) { .glance-grid { grid-template-columns: 1fr; } }
+      .glance { padding: 6px 0 2px; overflow-x: auto; }
+      .glance h3 { font-size: 19px; padding: 12px 16px 4px; }
+      .glance table { width: 100%; border-collapse: collapse; font-size: 15px; }
+      .glance th, .glance td { padding: 8px 12px; border-top: 1px solid var(--line); text-align: center; }
+      .glance th:first-child, .glance td:first-child { text-align: left; padding-left: 16px; }
+      .glance thead th { border-top: none; font-family: "Barlow Condensed", sans-serif; text-transform: uppercase; letter-spacing: .08em; font-size: 14px; color: var(--ink-2); }
+      .glance td.trim { font-weight: 600; }
+      .glance td.trim span { display: block; font-weight: 400; font-size: 12.5px; color: var(--ink-3); }
+      .glance .callout { margin: 10px 16px 14px; font-size: 14.5px; color: var(--ink-2); border-left: 3px solid var(--accent); padding-left: 10px; }
+      .glance .callout strong { color: var(--ink); }
+
+      /* ---------- matrix tabs ---------- */
+      .tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+      .tab {
+        font-family: "Barlow Condensed", sans-serif; font-weight: 600; letter-spacing: .05em; text-transform: uppercase;
+        font-size: 16.5px; padding: 8px 16px 7px; border: 1px solid var(--line-strong); background: var(--chip-bg);
+        color: var(--ink-2); cursor: pointer; border-radius: 3px;
+      }
+      .tab .yr { color: var(--accent-ink); }
+      .tab[aria-selected="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+      .tab[aria-selected="true"] .yr { color: inherit; opacity: .75; }
+      .tab:focus-visible, .chip:focus-visible, .search:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+      .panel-note { font-size: 15px; color: var(--ink-2); margin: 0 0 12px; max-width: 88ch; }
+      .panel-note strong { color: var(--ink); }
+
+      .toolbar { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; margin-bottom: 10px; }
+      .toolbar .lbl { font-family: "Barlow Condensed", sans-serif; text-transform: uppercase; letter-spacing: .1em; font-size: 13.5px; color: var(--ink-3); font-weight: 600; }
+      .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+      .chip {
+        font: inherit; font-size: 14px; font-weight: 600; padding: 4px 11px; border-radius: 999px;
+        border: 1px solid var(--line-strong); background: var(--chip-bg); color: var(--ink-2); cursor: pointer;
+      }
+      .chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+      @media (prefers-color-scheme: dark) { .chip[aria-pressed="true"] { color: #14100f; background: var(--accent); } }
+      .search {
+        font: inherit; font-size: 15px; padding: 7px 12px; border: 1px solid var(--line-strong);
+        background: var(--panel); color: var(--ink); border-radius: 3px; min-width: 220px; flex: 0 1 300px;
+      }
+      .search::placeholder { color: var(--ink-3); }
+
+      .table-scroll { overflow-x: auto; border: 1px solid var(--line); background: var(--panel); box-shadow: var(--shadow); }
+      table.matrix { border-collapse: separate; border-spacing: 0; width: 100%; font-size: 15px; }
+      table.matrix th, table.matrix td { padding: 9px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+      table.matrix thead th {
+        background: var(--panel-2); text-align: center; border-bottom: 2px solid var(--line-strong);
+        font-weight: 600; min-width: 128px;
+      }
+      table.matrix thead th.feat-head { text-align: left; }
+      table.matrix thead .trim-name { font-family: "Barlow Condensed", sans-serif; font-size: 20px; font-weight: 700; text-transform: uppercase; letter-spacing: .03em; display: block; line-height: 1.1; }
+      table.matrix thead .trim-sub { display: block; font-size: 12.5px; color: var(--ink-2); font-weight: 500; margin-top: 2px; line-height: 1.35; }
+      table.matrix thead .trim-msrp { display: block; font-size: 13px; color: var(--ink); font-weight: 700; margin-top: 4px; }
+      table.matrix thead .trim-msrp small { display: block; font-weight: 400; color: var(--ink-3); font-size: 11.5px; }
+      table.matrix tbody th.feat {
+        text-align: left; font-weight: 600; min-width: 196px; max-width: 250px;
+        position: sticky; left: 0; background: var(--sticky-bg); z-index: 2;
+        box-shadow: 1px 0 0 var(--line);
+      }
+      table.matrix thead th.feat-head { position: sticky; left: 0; z-index: 3; box-shadow: 1px 0 0 var(--line-strong); }
+      table.matrix td { text-align: center; }
+      table.matrix tr.grp td {
+        background: var(--group-bg); color: var(--group-ink); text-align: left;
+        font-family: "Barlow Condensed", sans-serif; font-weight: 600; text-transform: uppercase;
+        letter-spacing: .12em; font-size: 14.5px; padding: 7px 12px 6px; border-bottom: none;
+        position: sticky; left: 0;
+      }
+      table.matrix tr.cd-row th.feat, table.matrix tr.cd-row td { background: var(--yes-bg); }
+      @media (prefers-color-scheme: dark) { table.matrix tr.cd-row th.feat, table.matrix tr.cd-row td { background: #2a1a1e; } }
+      table.matrix tr.cd-row th.feat { box-shadow: 1px 0 0 var(--yes-line); }
+      table.matrix tr.cd-row .feat { font-weight: 700; }
+      .msrp-note { font-size: 13.5px; color: var(--ink-3); margin: 8px 2px 0; }
+      .table-foot { font-size: 14px; color: var(--ink-2); margin: 10px 2px 0; max-width: 92ch; }
+      .table-foot li { margin-bottom: 4px; }
+      .noresults { padding: 22px 16px; color: var(--ink-2); font-size: 15px; display: none; }
+
+      /* ---------- changes ---------- */
+      .changes-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+      @media (max-width: 820px) { .changes-grid { grid-template-columns: 1fr; } }
+      .change-card { padding: 18px 20px 8px; }
+      .change-card > h3 { font-size: 21px; margin-bottom: 4px; }
+      .step { border-top: 1px solid var(--line); padding: 13px 0 11px; }
+      .step:first-of-type { border-top: none; }
+      .step h4 { font-family: "Barlow Condensed", sans-serif; font-size: 17px; letter-spacing: .05em; text-transform: uppercase; margin: 0 0 7px; }
+      .step h4 .arr { color: var(--accent-ink); }
+      .step ul { margin: 0; padding: 0; list-style: none; }
+      .step li { padding: 3px 0 3px 74px; position: relative; font-size: 15px; }
+      .step li .tag {
+        position: absolute; left: 0; top: 5px; width: 62px; text-align: center;
+        font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 12px; letter-spacing: .07em;
+        padding: 2px 0 1px; border: 1px solid; border-radius: 3px; text-transform: uppercase;
+      }
+      .tag.add { background: var(--no-bg); color: var(--no-ink); border-color: var(--no-line); }
+      .tag.del { background: var(--yes-bg); color: var(--yes-ink); border-color: var(--yes-line); }
+      .tag.chg { background: var(--opt-bg); color: var(--opt-ink); border-color: var(--opt-line); }
+      .tag.mov { background: var(--new-bg); color: var(--new-ink); border-color: var(--new-line); }
+
+      /* ---------- cargo ---------- */
+      .cargo-scroll { overflow-x: auto; }
+      table.simple { width: 100%; border-collapse: collapse; font-size: 15.5px; }
+      table.simple th, table.simple td { padding: 10px 14px; border-top: 1px solid var(--line); text-align: left; vertical-align: top; }
+      table.simple thead th { border-top: none; font-family: "Barlow Condensed", sans-serif; text-transform: uppercase; letter-spacing: .08em; font-size: 14.5px; color: var(--ink-2); }
+      table.simple td.n, table.simple th.n { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+      table.simple tbody th { font-weight: 600; }
+
+      /* ---------- gotchas ---------- */
+      ol.gotchas { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+      ol.gotchas li {
+        counter-increment: g; position: relative; padding: 13px 16px 13px 58px;
+        border-top: 1px solid var(--line); font-size: 15.5px;
+      }
+      ol.gotchas li:first-child { border-top: none; }
+      ol.gotchas li::before {
+        content: counter(g); position: absolute; left: 16px; top: 12px;
+        font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 19px; color: var(--accent-ink);
+      }
+      ol.gotchas strong { font-weight: 700; }
+      .unv-box { padding: 16px 20px; font-size: 15px; }
+      .unv-box h3 { font-size: 18px; margin-bottom: 6px; }
+      .unv-box ul { margin: 6px 0 2px; padding-left: 20px; }
+      .unv-box li { margin-bottom: 5px; }
+
+      /* ---------- sources ---------- */
+      .sources { font-size: 14.5px; color: var(--ink-2); }
+      .sources li { margin-bottom: 7px; }
+      .sources .src-name { color: var(--ink); font-weight: 600; }
+      footer { margin-top: 44px; border-top: 1px solid var(--line); padding-top: 14px; font-size: 13.5px; color: var(--ink-3); }
+      .hidden-panel { display: none; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="hero">
+        <p class="kicker">Canada · Mazda Canada spec decks · Used-buying reference</p>
+        <h1>CX-5 &amp; CX-30, 2020–2022<br /><span class="thin">The full feature matrix, trim by trim</span></h1>
+        <p class="lede">
+          Every Canadian trim of the CX-5 and CX-30 for 2020, 2021 (including the mid-year <strong>2021.5 CX-5</strong>) and 2022,
+          with features as rows and trims as columns — built <strong>only from Mazda Canada's own “Specifications &amp; Features”
+          decks and pricing releases</strong>. US trim names (Sport, Touring, Preferred, Carbon Edition) never existed in Canada and
+          aren't used here. Cylinder deactivation gets its own highlighted row in every table, because it's the easiest thing to get wrong.
+        </p>
+        <div class="headline-grid">
+          <div class="stat">
+            <h3>Cylinder deactivation</h3>
+            <p><strong>CX-5 GX: never.</strong> Every non-turbo CX-5 above GX (GS, Kuro, GT, Sport Design) <strong>has CD</strong> in all years.
+            CX-30: CD on the <strong>2020 GT only</strong> — dropped entirely for 2021 and 2022.</p>
+          </div>
+          <div class="stat">
+            <h3>All-wheel drive</h3>
+            <p>Optional on GX/GS and standard higher up for 2020–2021. <strong>For 2022, AWD became standard on every trim</strong>
+            of both models in Canada — FWD was dropped.</p>
+          </div>
+          <div class="stat">
+            <h3>Screens</h3>
+            <p>CX-5: <strong>7″ in 2020</strong> (8″ only on GT Turbo / Signature) → <strong>8″ on every trim for 2021</strong> →
+            <strong>10.25″ at 2021.5</strong> with the new Mazda Connect. CX-30: <strong>8.8″ in all three years</strong> — and it's never a touchscreen.</p>
+          </div>
+          <div class="stat">
+            <h3>Base-trim safety split</h3>
+            <p>CX-30 GX (all years) and CX-5 GX (2020–2021) get <strong>no adaptive cruise, no Smart Brake Support, no lane-keep</strong> —
+            those start at GS. CX-5 GX only caught up at 2021.5.</p>
+          </div>
+        </div>
+      </header>
+
+      <section id="cd-glance">
+        <div class="sec-head">
+          <h2>Cylinder deactivation at a glance</h2>
+          <p>The one row that matters most, pulled out of every table. Turbo models show “No” because the 2.5T is a different engine — it never had CD.</p>
+        </div>
+        <div class="glance-grid">
+          <div class="card glance">
+            <h3>Mazda CX-5 — CD by trim &amp; year</h3>
+            <table>
+              <thead><tr><th>Trim (non-turbo 2.5)</th><th>2020</th><th>2021</th><th>2021.5</th><th>2022</th></tr></thead>
+              <tbody>
+                <tr><td class="trim">GX</td><td><span class="b b-no">No</span></td><td><span class="b b-no">No</span></td><td><span class="b b-no">No</span></td><td><span class="b b-no">No</span></td></tr>
+                <tr><td class="trim">GS</td><td><span class="b b-yes">Yes</span></td><td><span class="b b-yes">Yes</span></td><td><span class="b b-yes">Yes</span></td><td><span class="b b-yes">Yes</span></td></tr>
+                <tr><td class="trim">Kuro Edition<span>introduced 2021</span></td><td><span class="b b-na">N/A</span></td><td><span class="b b-yes">Yes</span></td><td><span class="b b-yes">Yes</span></td><td><span class="b b-yes">Yes</span></td></tr>
+                <tr><td class="trim">GT</td><td><span class="b b-yes">Yes</span></td><td><span class="b b-yes">Yes</span></td><td><span class="b b-yes">Yes</span></td><td><span class="b b-yes">Yes</span></td></tr>
+                <tr><td class="trim">Sport Design<span>introduced 2022</span></td><td><span class="b b-na">N/A</span></td><td><span class="b b-na">N/A</span></td><td><span class="b b-na">N/A</span></td><td><span class="b b-yes">Yes</span></td></tr>
+                <tr><td class="trim">Any 2.5 Turbo trim<span>GT Turbo · Sport Design Turbo · Signature · 100th Anniv.</span></td><td><span class="b b-no">No</span></td><td><span class="b b-no">No</span></td><td><span class="b b-no">No</span></td><td><span class="b b-no">No</span></td></tr>
+              </tbody>
+            </table>
+            <p class="callout"><strong>The trap:</strong> a buyer avoiding CD who buys a CX-5 GS, Kuro or GT in <em>any</em> of these years gets CD. On the CX-5, only the GX (and the turbos) avoid it. Mazda Canada's own model line-up prints “2.5 CD” for GS-and-up non-turbo cars — ads almost never mention it.</p>
+          </div>
+          <div class="card glance">
+            <h3>Mazda CX-30 — CD by trim &amp; year</h3>
+            <table>
+              <thead><tr><th>Trim</th><th>2020</th><th>2021</th><th>2022</th></tr></thead>
+              <tbody>
+                <tr><td class="trim">GX<span>2.0L</span></td><td><span class="b b-no">No</span></td><td><span class="b b-no">No</span></td><td><span class="b b-no">No</span></td></tr>
+                <tr><td class="trim">GS<span>2.5L</span></td><td><span class="b b-no">No</span></td><td><span class="b b-no">No</span></td><td><span class="b b-no">No</span></td></tr>
+                <tr><td class="trim">GT<span>2.5L</span></td><td><span class="b b-yes">Yes</span></td><td><span class="b b-no">No</span></td><td><span class="b b-no">No</span></td></tr>
+                <tr><td class="trim">GT Turbo<span>2.5T, added 2021</span></td><td><span class="b b-na">N/A</span></td><td><span class="b b-no">No</span></td><td><span class="b b-no">No</span></td></tr>
+              </tbody>
+            </table>
+            <p class="callout"><strong>The only CD CX-30 of 2020–2022 is the 2020 GT.</strong> Mazda Canada's 2021 CX-30 deck states it outright — “Dropped Cylinder Deactivation Engine” — and it never came back. A 2020 GS never had CD either.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="matrix">
+        <div class="sec-head">
+          <h2>The matrices</h2>
+          <p>Features down the side, trims across the top. Pick a model-year, tap trim chips to narrow the columns to the cars you're actually comparing, or filter rows by feature name.</p>
+        </div>
+        <div class="card legend" style="margin-bottom:14px;">
+          <span class="lg"><span class="c-std">✓</span> standard</span>
+          <span class="lg"><span class="b b-opt">Pkg</span> optional — in the named package or as an option</span>
+          <span class="lg"><span class="c-dash">—</span> not available on that trim</span>
+          <span class="lg"><span class="b b-yes">CD Yes</span> / <span class="b b-no">CD No</span> cylinder deactivation row</span>
+          <span class="lg"><span class="b b-new">New</span> changed at 2021.5</span>
+          <span class="lg"><span class="b b-unv">Unverified</span> not confirmable from a Canadian primary source</span>
+        </div>
+        <div class="tabs" role="tablist" id="tabs"></div>
+        <div id="panels"></div>
+      </section>
+
+      <section id="changes">
+        <div class="sec-head">
+          <h2>Year over year: added, removed, changed</h2>
+          <p>What actually moved between model years — including features that slid down to cheaper trims and the ones that quietly disappeared.</p>
+        </div>
+        <div class="changes-grid">
+          <div class="card change-card">
+            <h3>Mazda CX-5</h3>
+            <div class="step">
+              <h4>2020 <span class="arr">→</span> 2021</h4>
+              <ul>
+                <li><span class="tag add">Added</span><strong>Kuro Edition</strong> — a GS-AWD-with-Comfort-Package base plus Garnet Red leather, black 19″ wheels, 10-way power/memory driver seat.</li>
+                <li><span class="tag add">Added</span><strong>100th Anniversary Edition</strong> (Signature-based, Snowflake White Pearl / Garnet Red Nappa, one year only).</li>
+                <li><span class="tag mov">Moved ↓</span><strong>8″ screen to every trim</strong> — in 2020 only GT Turbo and Signature had it; GT non-turbo and below had 7″.</li>
+                <li><span class="tag mov">Moved ↓</span><strong>Off-Road Traction Assist</strong> became available on GX/GS with AWD (was GT Turbo / Signature only).</li>
+                <li><span class="tag add">Added</span>Signature gains <strong>Smart City Brake Support – Rear</strong> and <strong>Driver Attention Alert</strong>; GT gains <strong>wireless Apple CarPlay</strong>.</li>
+                <li><span class="tag chg">Changed</span>AWD option price fell <strong>$2,000 → $1,500</strong> on GX/GS. Engines and CD pattern unchanged.</li>
+                <li><span class="tag del">Removed</span>Colours Titanium Flash Mica (all) and Eternal Blue (GX).</li>
+              </ul>
+            </div>
+            <div class="step">
+              <h4>2021 <span class="arr">→</span> 2021.5 (mid-year)</h4>
+              <ul>
+                <li><span class="tag add">Added</span><strong>10.25″ display + latest-generation Mazda Connect, standard on all trims</strong> — replaces the 8″ touchscreen system.</li>
+                <li><span class="tag add">Added</span><strong>Mazda Connected Services</strong> (remote start/stop, lock/unlock, health report via MyMazda app), available from Fall 2021 with a free trial.</li>
+                <li><span class="tag add">Added</span><strong>GX gains the full i-Activsense suite</strong>: MRCC with Stop &amp; Go, Smart Brake Support Front, Pedestrian Detection, Lane-Keep Assist, Lane Departure Warning, High Beam Control.</li>
+                <li><span class="tag add">Added</span>19″ wheels newly available on <strong>GS with AWD</strong>; Kuro gains a <strong>black leather with red stitching</strong> interior option alongside Garnet Red.</li>
+                <li><span class="tag del">Removed</span><strong>Wireless Apple CarPlay on GT</strong> — dropped with the move to the new Mazda Connect (wired CarPlay/Android Auto remain).</li>
+                <li><span class="tag chg">Changed</span>Prices up roughly $350–$550 per trim. CD, engines and FWD availability unchanged. 100th Anniversary absent from the 2021.5 price table (presumed discontinued — unverified).</li>
+              </ul>
+            </div>
+            <div class="step">
+              <h4>2021.5 <span class="arr">→</span> 2022 (facelift)</h4>
+              <ul>
+                <li><span class="tag add">Added</span><strong>AWD standard on every trim</strong>; <strong>Sport Design</strong> trim added; <strong>Mi-Drive</strong> (Normal/Sport/Off-Road) on Kuro and up; <strong>Traffic Jam Assist</strong> on Sport Design and Signature; <strong>Qi wireless charging</strong> on GT.</li>
+                <li><span class="tag del">Removed</span><strong>FWD entirely</strong>; separate LED fog lamps (fog function integrated into the new headlights).</li>
+                <li><span class="tag chg">Changed</span>Facelift: new 3D-texture grille and signature wing, new bumpers and tailgate, larger tailpipes, rectangular LED lamps; redesigned seats, revised suspension damping and frame rigidity, more responsive 6AT. Signature gets body-colour cladding.</li>
+                <li><span class="tag chg">Changed</span>GS Comfort Package now bundles 19″ wheels and a reversible trunk board — price $1,500 → <strong>$2,100</strong>. Turbo power 250 → <strong>256 hp</strong> (93 octane). Cargo dips slightly to 871 / 1,680 L.</li>
+                <li><span class="tag add">Added</span>A −$400 GT <strong>“standard sound, without SiriusXM”</strong> delete variant (6 speakers, no Bose/SiriusXM) appears in the deck. CD pattern unchanged.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card change-card">
+            <h3>Mazda CX-30</h3>
+            <div class="step">
+              <h4>2020 <span class="arr">→</span> 2021</h4>
+              <ul>
+                <li><span class="tag del">Removed</span><strong>Cylinder deactivation (GT)</strong> — the only CD CX-30 disappears after one year.</li>
+                <li><span class="tag add">Added</span><strong>GT Turbo option</strong> (+$2,400): black-finish 18″ wheels, Jet Black Mica mirrors, larger exhaust, Turbo badges.</li>
+                <li><span class="tag mov">Moved ↓</span><strong>Auto on/off headlights and rain-sensing wipers to GX</strong> (2020 GX had auto-off-only headlights and no rain-sensing wipers).</li>
+                <li><span class="tag chg">Changed</span>AWD option $2,000 → <strong>$1,500</strong>. GS Luxury Package gains mirror reverse-tilt / memory-seat link in the deck description; Luxury stitch colour changes from warm silver to dark grey for November production.</li>
+                <li><span class="tag chg">Changed</span>No changes to screen, audio, or the GX-vs-GS safety split.</li>
+              </ul>
+            </div>
+            <div class="step">
+              <h4>2021 <span class="arr">→</span> 2022</h4>
+              <ul>
+                <li><span class="tag del">Removed</span><strong>FWD entirely.</strong></li>
+                <li><span class="tag add">Added</span><strong>AWD and Off-Road Traction Assist standard on all trims</strong>; <strong>Mazda Connected Services</strong> standard (2-year trial).</li>
+                <li><span class="tag add">Added</span>GT <strong>Advanced Visibility Package</strong> ($800): 360° View Monitor, front parking sensors, Traffic Jam Assist — the CX-30's first 360° camera. The GT Turbo now requires this package.</li>
+                <li><span class="tag chg">Changed</span>GS Luxury Package $1,900 → <strong>$2,200</strong>. Colours: Platinum Quartz Metallic added (GS/GT), Garnet Red leather becomes a GT interior option, Titanium Flash Mica dropped.</li>
+                <li><span class="tag add">Added</span>A −$400 GT <strong>“Mazda Harmonic Acoustics, without SiriusXM”</strong> delete variant (8 speakers instead of Bose 12). CD remains absent on every trim.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="cargo">
+        <div class="sec-head">
+          <h2>Cargo &amp; towing</h2>
+          <p>These vary by model and year, not by trim — from the Specifications pages of the same Mazda Canada decks.</p>
+        </div>
+        <div class="card cargo-scroll">
+          <table class="simple">
+            <thead><tr><th>Model / year</th><th class="n">Cargo, rear seat up</th><th class="n">Cargo, seats folded</th><th>Towing</th><th class="n">Fuel tank</th></tr></thead>
+            <tbody>
+              <tr><th>CX-5 · 2020</th><td class="n">875 L</td><td class="n">1,687 L</td><td>907 kg (2,000 lb)</td><td class="n">56 L FWD / 58 L AWD</td></tr>
+              <tr><th>CX-5 · 2021</th><td class="n">875 L</td><td class="n">1,687 L</td><td>907 kg (2,000 lb)</td><td class="n">56 L FWD / 58 L AWD</td></tr>
+              <tr><th>CX-5 · 2021.5</th><td class="n">875 L <span class="b b-unv">Unverified</span></td><td class="n">1,687 L <span class="b b-unv">Unverified</span></td><td>907 kg — presumed, no deck</td><td class="n">—</td></tr>
+              <tr><th>CX-5 · 2022</th><td class="n">871 L</td><td class="n">1,680 L</td><td>907 kg (2,000 lb)</td><td class="n">58 L (all AWD)</td></tr>
+              <tr><th>CX-30 · 2020</th><td class="n">572 L</td><td class="n">1,280 L</td><td>Not published in the Canadian deck</td><td class="n">51 L FWD / 48 L AWD</td></tr>
+              <tr><th>CX-30 · 2021</th><td class="n">572 L</td><td class="n">1,280 L</td><td>Not published in the Canadian deck</td><td class="n">51 L FWD / 48 L AWD</td></tr>
+              <tr><th>CX-30 · 2022</th><td class="n">572 L</td><td class="n">1,280 L</td><td>Not published in the Canadian deck</td><td class="n">48 L (all AWD)</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="msrp-note">CX-30 towing: reported as “not published” rather than zero — no Canadian CX-30 deck lists a towing capacity. 2021.5 CX-5 cargo is presumed identical to 2021 because no 2021.5 spec deck exists; it is marked unverified rather than filled in.</p>
+      </section>
+
+      <section id="gotchas">
+        <div class="sec-head">
+          <h2>Gotchas for a used buyer</h2>
+          <p>Where listings and trim badges mislead — all traceable to the decks above.</p>
+        </div>
+        <div class="card">
+          <ol class="gotchas">
+            <li><strong>CD traps run in both directions.</strong> Avoiding CD? Any CX-5 GS/Kuro/GT non-turbo, any year, has it — only GX and turbos don't. Expecting CD fuel savings from a 2020 CX-30 GT review? 2021–2022 CX-30s have none at all, and the 2020 GS never had it — only the 2020 GT.</li>
+            <li><strong>“2021 CX-5” is two different cars.</strong> Early 2021: 8″ touchscreen, old Mazda Connect, GX without adaptive cruise. 2021.5: 10.25″ wide display, new Mazda Connect, Connected Services, full safety suite on GX — but GT loses wireless CarPlay. The screen is the visual tell: 8″ touch vs 10.25″ wide.</li>
+            <li><strong>Screens are easy to confuse in photos.</strong> A 2020 CX-5 GT non-turbo has the 7″ screen while the same-year GT Turbo/Signature have 8″ — the GT badge alone doesn't tell you. The CX-30's 8.8″ is never a touchscreen in any year; the CX-5's 7″/8″ (2020–2021) are touchscreens and the 10.25″ (2021.5+) is the commander-knob system.</li>
+            <li><strong>Package features get advertised as trim features.</strong> CX-5 GS: moonroof, dual-zone climate and rear console vents exist <em>only</em> with the Comfort Package (which itself requires AWD) — a GS FWD or non-Comfort GS AWD has manual climate and no moonroof, though it keeps the power liftgate and heated steering wheel. CX-30 GS: leatherette, power/memory driver seat and moonroof exist only with the Luxury Package; a plain GS is cloth with an 8-way manual seat. In the decks' price tables the CX-30 Luxury Package is listed only in combination with AWD.</li>
+            <li><strong>Safety mislabelling is routine.</strong> CX-30 GX (all years) and CX-5 GX (2020/2021) are advertised with “adaptive cruise / lane keep” — they don't have MRCC, Smart Brake Support, lane-keep or High Beam Control. They have Blind Spot Monitoring, Rear Cross-Traffic and a rear camera (CX-5 GX adds Smart City Brake Support Front). Those features start at GS — or at 2021.5 for the CX-5 GX.</li>
+            <li><strong>2022 delete-option cars.</strong> Some 2022 GTs were built with the −$400 “without SiriusXM” package: 6 speakers (CX-5) or 8-speaker Harmonic (CX-30) instead of Bose 10/12, and no SiriusXM. A “2022 GT” ad claiming Bose needs the actual build verified.</li>
+            <li><strong>Turbo ≠ top-trim content.</strong> A CX-30 GT Turbo is a GT plus an engine option (2022: plus the mandatory Advanced Visibility Package); a 2020/2021 CX-5 GT Turbo doesn't gain Signature items (360° camera, parking sensors, SCBS-Rear, Driver Attention Alert). And a 2022 CX-5 Sport Design <em>non-turbo</em> still has CD and no paddle shifters.</li>
+            <li><strong>Kuro ≠ GT.</strong> The CX-5 Kuro is a GS+Comfort-based style trim — no Bose, no head-up display, no navigation, no ventilated or heated rear seats, despite the leather and 19″ wheels. In 2022 it gains Mi-Drive and the 7″ LCD meter set, still without GT audio/safety extras.</li>
+            <li><strong>Small-item splits on the CX-30 GX.</strong> GX mirrors are non-heated in all three years (heated starts at GS), and the 2020 GX lacks the rain-sensing wipers and auto-on headlights that 2021+ GX has. The CX-5 GX, by contrast, has heated mirrors and rain-sensing wipers in every year.</li>
+            <li><strong>Things no trim has.</strong> No CX-30 offers heated rear seats or ventilated seats in any year, and no 2020–2021 CX-30 has a 360° camera. Neither model offers roof <em>rails</em> (the CX-5 has roof-rack mouldings only), a rear-seat alert is not listed in any deck, and front parking sensors exist only on CX-5 Signature / CX-30 with the 2022 Advanced Visibility Package.</li>
+            <li><strong>MSRPs drifted within model years.</strong> Mazda Canada raised prices mid-year — e.g. 2022 CX-5 GX was $30,200 at launch and $30,500 in the May 2022 deck; 2021 CX-5 GX went $28,500 → $28,600. An ad quoting “original MSRP” may legitimately match either figure. All MSRPs here exclude $1,950 freight &amp; PDE and the $100 A/C surcharge.</li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="unverified">
+        <div class="sec-head">
+          <h2>What couldn't be verified</h2>
+          <p>Stated plainly rather than filled in from US data or adjacent years.</p>
+        </div>
+        <div class="card unv-box">
+          <ul>
+            <li><strong>No 2021.5 CX-5 Specifications &amp; Features PDF exists</strong> on Mazda Canada's media filecache. The 2021.5 panel rests on Mazda Canada's own May 12, 2021 mid-year update release. Anything that release doesn't name — DRSS/Forward Obstruction Warning on the 2021.5 GX, the exact packaging of the GS 19″ wheels, 100th Anniversary continuation, 2021.5 cargo volume — is marked <span class="b b-unv">Unverified</span>.</li>
+            <li><strong>2022 CX-5 Advanced Keyless Entry conflict:</strong> the Nov 30, 2021 pricing release lists it among GS additions; the spec deck's Equipment Walk places it only in the GS Comfort Package (as in 2020–2021). The deck is treated as authoritative on this page — verify on the actual car.</li>
+            <li><strong>2020 CX-30 Luxury Package mirror functions:</strong> the 2020 deck's Luxury description omits mirror reverse-tilt / memory link (they're listed as GT items); the 2021 deck adds them to the Luxury description. Check individual 2020 Luxury cars.</li>
+            <li><strong>Wireless CarPlay on 2021 Signature / 100th Anniversary</strong> is by inheritance — the deck lists it under GT and Signature “includes GT” equipment — rather than a separate line item.</li>
+            <li><strong>Rear seat alert / rear occupant reminder:</strong> not listed in any of the six decks, for any trim or year.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="sources">
+        <div class="sec-head">
+          <h2>Sources</h2>
+          <p>Every column traces to one of these Mazda Canada documents.</p>
+        </div>
+        <ul class="sources">
+          <li><span class="src-name">2020 CX-5 Specifications &amp; Features</span>, Mazda Canada, issued Oct 25, 2019 — <a href="https://filecache.mediaroom.com/mr5mr_mazdaca/217271/download/2020%20Mazda%20CX-5%20Specifications%20and%20Features.pdf">filecache.mediaroom.com (PDF)</a></li>
+          <li><span class="src-name">2021 CX-5 Specifications &amp; Features</span>, Mazda Canada, issued Aug 25, 2020 (MSRP eff. May 1, 2021) — <a href="http://filecache.mediaroom.com/mr5mr_mazdaca/218905/download/2021%20Mazda%20CX-5%20Specifications%20and%20Features.pdf">filecache.mediaroom.com (PDF)</a></li>
+          <li><span class="src-name">2021.5 CX-5 / CX-9 Mid-Year Update</span>, Mazda Canada, May 12, 2021 — <a href="https://www.mazda.ca/en/inside-mazda/cx-5-cx-9-mid-year-update/">mazda.ca</a></li>
+          <li><span class="src-name">2021 CX-5 launch release</span>, Mazda Canada News, Aug 25, 2020 — <a href="https://en.media.mazda.ca/2020-08-25-2021-Mazda-CX-5-More-To-Discover">en.media.mazda.ca</a></li>
+          <li><span class="src-name">2022 CX-5 Specifications &amp; Features</span>, Mazda Canada, issued Dec 2, 2021 (MSRP eff. May 3, 2022) — <a href="https://filecache.mediaroom.com/mr5mr_mazdaca/221398/download/2022%20Mazda%20CX-5%20Specifications%20and%20Features.pdf">filecache.mediaroom.com (PDF)</a></li>
+          <li><span class="src-name">2022 CX-5 Pricing and Packaging</span>, Mazda Canada News, Nov 30, 2021 — <a href="https://en.media.mazda.ca/2021-11-30-2022-Mazda-CX-5-Pricing-and-Packaging">en.media.mazda.ca</a></li>
+          <li><span class="src-name">2020 CX-30 Specifications and Pricing</span>, Mazda Canada, issued Dec 10, 2019 — <a href="https://filecache.mediaroom.com/mr5mr_mazdaca/217275/download/2020%20Mazda%20CX-30%20Specifications%20and%20Pricing.pdf">filecache.mediaroom.com (PDF)</a> · <a href="https://filecache.mediaroom.com/mr5mr_mazdaca/217276/download/2020%20Mazda%20CX-30%20Press%20Kit.pdf">2020 CX-30 Press Kit (PDF)</a></li>
+          <li><span class="src-name">2021 CX-30 Specifications &amp; Features</span>, Mazda Canada, issued Sep 18, 2020 (MSRP eff. May 1, 2021) — <a href="https://filecache.mediaroom.com/mr5mr_mazdaca/218898/download/2021%20Mazda%20CX-30%20Specifications%20and%20Features.pdf">filecache.mediaroom.com (PDF)</a></li>
+          <li><span class="src-name">2022 CX-30 Specifications &amp; Features</span>, Mazda Canada, issued Feb 22, 2022 (MSRP eff. May 3, 2022) — <a href="https://filecache.mediaroom.com/mr5mr_mazdaca/220998/download/2022%20Mazda%20CX-30%20Specifications%20and%20Features.pdf">filecache.mediaroom.com (PDF)</a></li>
+          <li><span class="src-name">2022 CX-30 Pricing and Packaging</span>, Mazda Canada via CNW, Jan 4, 2022 — <a href="https://www.newswire.ca/news-releases/2022-mazda-cx-30-pricing-and-packaging-893104155.html">newswire.ca</a></li>
+        </ul>
+        <footer>
+          Canadian specifications only. MSRPs exclude $1,950 freight &amp; PDE and the $100 A/C surcharge in all sources. Where a launch release and a later spec deck disagree on price, both are shown with their dates.
+        </footer>
+      </section>
+    </div>
+
+    <script>
+    /* Cell encoding:
+       "✓" standard · "—" not available · "YES"/"NO" cylinder deactivation
+       "O:label" optional/package · "N:text" new/changed (2021.5) · "R:text" removed
+       "U:text" unverified · "text||note" value with a small note underneath */
+    var S = "✓", X = "—";
+
+    var DATASETS = [
+    /* ================= CX-5 2020 ================= */
+    {
+      id: "cx5-2020", model: "CX-5", year: "2020",
+      note: "Source: Mazda Canada <strong>2020 CX-5 Specifications &amp; Features</strong> deck (issued Oct 25, 2019). Five columns — note the GT splits into two engines, and only the turbo GT gets the 8″ screen this year.",
+      msrpNote: "MSRP from the spec deck, effective Dec 3, 2019. Excludes $1,950 freight & PDE and $100 A/C surcharge.",
+      foot: ["* Navigation-ready: requires the SD-card accessory. The 2.2L diesel offered briefly on the 2019 Signature does not appear in any 2020–2022 Canadian deck."],
+      cols: [
+        { name: "GX", sub: "2.5L NA · 187 hp · FWD std, AWD opt", msrp: "$27,950", msrpSub: "$29,950 with AWD" },
+        { name: "GS", sub: "2.5L CD · FWD std, AWD opt", msrp: "$30,950", msrpSub: "$32,950 AWD · $34,450 AWD + Comfort Pkg" },
+        { name: "GT", sub: "2.5L CD · AWD only", msrp: "$37,650", msrpSub: "" },
+        { name: "GT Turbo", sub: "2.5L Turbo · AWD only", msrp: "$39,650", msrpSub: "turbo = $2,000 option on GT" },
+        { name: "Signature", sub: "2.5L Turbo · AWD only", msrp: "$41,900", msrpSub: "" }
+      ],
+      groups: [
+        { g: "Powertrain", rows: [
+          ["Cylinder deactivation", "NO", "YES", "YES", "NO||turbo engine", "NO||turbo engine"],
+          ["Engine", "2.5L NA · 187 hp", "2.5L NA · 187 hp", "2.5L NA · 187 hp", "2.5L Turbo · 250 hp (93 oct) / 227 (87)", "2.5L Turbo · 250 hp (93 oct) / 227 (87)"],
+          ["Transmission", "6-speed auto · Drive Selection · G-Vectoring Control Plus", "6-speed auto · Drive Selection · G-Vectoring Control Plus", "6-speed auto · Drive Selection · G-Vectoring Control Plus", "6-speed auto · Drive Selection · G-Vectoring Control Plus", "6-speed auto · Drive Selection · G-Vectoring Control Plus"],
+          ["All-wheel drive", "O:$2,000 option", "O:option", S, S, S],
+          ["Paddle shifters", X, X, X, S + "||with turbo", S],
+          ["Off-Road Traction Assist", X, X, X, S + "||with turbo", S]
+        ]},
+        { g: "Wheels & exterior", rows: [
+          ["Wheels", "17″ dark grey", "17″", "19″ silver", "19″", "19″ gunmetal"],
+          ["LED headlights & daytime running lights", S, S, S, S, S],
+          ["LED fog lights", X, X, S, S, S],
+          ["Auto-levelling headlights", X, S, S, S, S],
+          ["Front wiper de-icer", X, S, S, S, S],
+          ["Rain-sensing wipers", S, S, S, S, S],
+          ["Heated side mirrors", S, S, S, S, S],
+          ["Power-folding mirrors", X + "||manual fold", X, S + "||auto", S, S],
+          ["Roof rails", X + "||roof-rack mouldings only", X, X, X, X],
+          ["Power liftgate", X, S, S, S, S],
+          ["Moonroof", X, "O:Comfort Pkg", S, S, S]
+        ]},
+        { g: "Infotainment", rows: [
+          ["Centre display", "7″ touchscreen", "7″ touchscreen", "7″ touchscreen", "8″ touchscreen", "8″ touchscreen"],
+          ["Apple CarPlay / Android Auto", S + "||wired", S + "||wired", S + "||wired", S + "||wired", S + "||wired"],
+          ["Speakers", "4", "6", "10 · Bose", "10 · Bose", "10 · Bose"],
+          ["SiriusXM", X, X, S, S, S],
+          ["Navigation", "Ready*", "Ready*", S, S, S],
+          ["Mazda Connected Services", X, X, X, X, X],
+          ["USB ports", "2 front", "4||+2 in rear armrest", "4", "4", "4"]
+        ]},
+        { g: "Comfort & interior", rows: [
+          ["Seat material", "Cloth", "Leatherette + Grand Lux Suede", "Leather", "Leather", "Nappa leather"],
+          ["Heated front seats", S, S, S, S, S],
+          ["Heated rear seats", X, X, S, S, S],
+          ["Ventilated front seats", X, X, S, S, S],
+          ["Heated steering wheel", X, S, S, S, S],
+          ["Driver seat adjustment", "6-way manual", "6-way power · manual lumbar", "10-way power · power lumbar · memory", "10-way power · memory", "10-way power · memory"],
+          ["Dual-zone climate control", X, "O:Comfort Pkg", S, S, S],
+          ["Rear console vents", X, "O:Comfort Pkg", S, S, S],
+          ["Head-up display (Active Driving Display)", X, X, S, S, S],
+          ["Auto-dimming rearview mirror", X + "||day/night manual", S, S, S, S + "||frameless"],
+          ["Leather steering wheel & shift knob", X, S, S, S, S]
+        ]},
+        { g: "Safety — i-Activsense, feature by feature", rows: [
+          ["Adaptive cruise (MRCC) with Stop & Go", X + "||plain cruise only", S, S, S, S],
+          ["Smart City Brake Support — front", S, S, S, S, S],
+          ["Smart Brake Support — front", X, S, S, S, S],
+          ["Pedestrian detection", X, S, S, S, S],
+          ["Distance Recognition Support System (DRSS)", X, S, S, S, S],
+          ["Forward Obstruction Warning", X, S, S, S, S],
+          ["Blind Spot Monitoring", S, S, S, S, S],
+          ["Rear Cross-Traffic Alert", S, S, S, S, S],
+          ["Lane Departure Warning", X, S, S, S, S],
+          ["Lane-Keep Assist", X, S, S, S, S],
+          ["High Beam Control", X, S, S, S, S],
+          ["Driver Attention Alert", X, X, X, X, X + "||not in the 2020 walk"],
+          ["Traffic Sign Recognition", X, X, S, S, S],
+          ["Adaptive Front-lighting System (AFS)", X, X, S, S, S],
+          ["360° View Monitor", X, X, X, X, S],
+          ["Parking sensors", X, X, X, X, "Front & rear"],
+          ["Smart City Brake Support — rear", X, X, X, X, X]
+        ]}
+      ]
+    },
+    /* ================= CX-5 2021 ================= */
+    {
+      id: "cx5-2021", model: "CX-5", year: "2021",
+      note: "Source: Mazda Canada <strong>2021 CX-5 Specifications &amp; Features</strong> deck (issued Aug 25, 2020). New this year: <strong>Kuro Edition</strong> and <strong>100th Anniversary Edition</strong>. The equipment walk is the 2020 walk with the changes described in the year-over-year section — 8″ screen everywhere, Off-Road Traction Assist down to GX/GS, wireless CarPlay and two new safety features at the top.",
+      msrpNote: "Two prices exist for 2021: the Aug 25, 2020 launch release (smaller figure) and the spec deck effective May 1, 2021 (shown). Mazda Canada raised prices mid-year. Excludes $1,950 freight & PDE and $100 A/C surcharge.",
+      foot: ["* Navigation-ready: requires the SD-card accessory.", "100th Anniversary cosmetics (deck): Snowflake White Pearl only, Garnet Red Nappa, red carpets/mats, embossed headrests, 100th key fob, badges and wheel caps, plus an R360 model and photo book gift."],
+      cols: [
+        { name: "GX", sub: "2.5L NA · 187 hp · FWD std, AWD opt", msrp: "$28,600", msrpSub: "$30,100 AWD · launch was $28,500 / $30,000" },
+        { name: "GS", sub: "2.5L CD · FWD std, AWD opt", msrp: "$31,750", msrpSub: "$33,250 AWD · $34,750 AWD + Comfort · launch $31,600 / $33,100" },
+        { name: "Kuro Edition", sub: "2.5L CD · AWD only · new trim", msrp: "$36,550", msrpSub: "launch $36,400" },
+        { name: "GT", sub: "2.5L CD · AWD only", msrp: "$37,950", msrpSub: "launch $37,800" },
+        { name: "GT Turbo", sub: "2.5L Turbo · AWD only", msrp: "$39,950", msrpSub: "launch $39,800 · turbo = $2,000 option on GT" },
+        { name: "Signature", sub: "2.5L Turbo · AWD only", msrp: "$42,200", msrpSub: "launch $42,050" },
+        { name: "100th Anniversary", sub: "2.5L Turbo · AWD only · new, Signature-based", msrp: "$43,550", msrpSub: "" }
+      ],
+      groups: [
+        { g: "Powertrain", rows: [
+          ["Cylinder deactivation", "NO", "YES", "YES", "YES", "NO||turbo engine", "NO||turbo engine", "NO||turbo engine"],
+          ["Engine", "2.5L NA · 187 hp", "2.5L NA · 187 hp", "2.5L NA · 187 hp", "2.5L NA · 187 hp", "2.5L Turbo · 250 hp (93 oct) / 227 (87)", "2.5L Turbo · 250 hp (93 oct) / 227 (87)", "2.5L Turbo · 250 hp (93 oct) / 227 (87)"],
+          ["Transmission", "6-speed auto · Drive Selection · G-Vectoring Control Plus", "6-speed auto · Drive Selection · G-Vectoring Control Plus", "6-speed auto · Drive Selection · G-Vectoring Control Plus", "6-speed auto · Drive Selection · G-Vectoring Control Plus", "6-speed auto · Drive Selection · G-Vectoring Control Plus", "6-speed auto · Drive Selection · G-Vectoring Control Plus", "6-speed auto · Drive Selection · G-Vectoring Control Plus"],
+          ["All-wheel drive", "O:$1,500 option", "O:option", S, S, S, S, S],
+          ["Paddle shifters", X, X, X, X, S, S, S],
+          ["Off-Road Traction Assist", "O:with AWD", "O:with AWD", S, S, S, S, S]
+        ]},
+        { g: "Wheels & exterior", rows: [
+          ["Wheels", "17″", "17″", "19″ black metallic", "19″ silver", "19″", "19″ gunmetal", "19″ gunmetal"],
+          ["LED headlights & daytime running lights", S, S, S, S, S, S, S],
+          ["LED fog lights", X, X, X, S, S, S, S],
+          ["Auto-levelling headlights", X, S, S, S, S, S, S],
+          ["Front wiper de-icer", X, S, S, S, S, S, S],
+          ["Rain-sensing wipers", S, S, S, S, S, S, S],
+          ["Heated side mirrors", S, S, S, S, S, S, S],
+          ["Power-folding mirrors", X + "||manual fold", X, X, S + "||auto", S, S, S],
+          ["Roof rails", X + "||roof-rack mouldings only", X, X, X, X, X, X],
+          ["Power liftgate", X, S, S, S, S, S, S],
+          ["Moonroof", X, "O:Comfort Pkg", S, S, S, S, S]
+        ]},
+        { g: "Infotainment", rows: [
+          ["Centre display", "8″ touchscreen||was 7″ in 2020", "8″ touchscreen", "8″ touchscreen", "8″ touchscreen", "8″ touchscreen", "8″ touchscreen", "8″ touchscreen"],
+          ["Apple CarPlay / Android Auto", S + "||wired", S + "||wired", S + "||wired", S + "||wired", S + "||wired", S + "||wired", S + "||wired"],
+          ["Wireless Apple CarPlay", X, X, X, S + "||new for 2021", S, S, S],
+          ["Speakers", "4", "6", "6", "10 · Bose", "10 · Bose", "10 · Bose", "10 · Bose"],
+          ["SiriusXM", X, X, X, S, S, S, S],
+          ["Navigation", "Ready*", "Ready*", X, S, S, S, S],
+          ["Mazda Connected Services", X, X, X, X, X, X, X + "||arrives at 2021.5"],
+          ["USB ports", "2 front", "4", "4", "4", "4", "4", "4"]
+        ]},
+        { g: "Comfort & interior", rows: [
+          ["Seat material", "Cloth", "Leatherette + Grand Lux Suede", "Garnet Red leather", "Leather", "Leather", "Cocoa Nappa leather", "Garnet Red Nappa leather"],
+          ["Heated front seats", S, S, S, S, S, S, S],
+          ["Heated rear seats", X, X, X, S, S, S, S],
+          ["Ventilated front seats", X, X, X, S, S, S, S],
+          ["Heated steering wheel", X, S, S, S, S, S, S],
+          ["Driver seat adjustment", "6-way manual", "6-way power", "10-way power · memory", "10-way power · memory", "10-way power · memory", "10-way power · memory", "10-way power · memory"],
+          ["Dual-zone climate control", X, "O:Comfort Pkg", S, S, S, S, S],
+          ["Rear console vents", X, "O:Comfort Pkg", S, S, S, S, S],
+          ["Head-up display (Active Driving Display)", X, X, X, S, S, S, S],
+          ["Auto-dimming rearview mirror", X + "||day/night manual", S, S, S, S, S + "||frameless", S],
+          ["Leather steering wheel & shift knob", X, S, S, S, S, S, S]
+        ]},
+        { g: "Safety — i-Activsense, feature by feature", rows: [
+          ["Adaptive cruise (MRCC) with Stop & Go", X + "||plain cruise only", S, S, S, S, S, S],
+          ["Smart City Brake Support — front", S, S, S, S, S, S, S],
+          ["Smart Brake Support — front", X, S, S, S, S, S, S],
+          ["Pedestrian detection", X, S, S, S, S, S, S],
+          ["Distance Recognition Support System (DRSS)", X, S, S, S, S, S, S],
+          ["Forward Obstruction Warning", X, S, S, S, S, S, S],
+          ["Blind Spot Monitoring", S, S, S, S, S, S, S],
+          ["Rear Cross-Traffic Alert", S, S, S, S, S, S, S],
+          ["Lane Departure Warning", X, S, S, S, S, S, S],
+          ["Lane-Keep Assist", X, S, S, S, S, S, S],
+          ["High Beam Control", X, S, S, S, S, S, S],
+          ["Driver Attention Alert", X, X, X, X, X, S + "||new for 2021", S],
+          ["Traffic Sign Recognition", X, X, X, S, S, S, S],
+          ["Adaptive Front-lighting System (AFS)", X, X, X, S, S, S, S],
+          ["360° View Monitor", X, X, X, X, X, S, S],
+          ["Parking sensors", X, X, X, X, X, "Front & rear", "Front & rear"],
+          ["Smart City Brake Support — rear", X, X, X, X, X, S + "||new for 2021", S]
+        ]}
+      ]
+    },
+    /* ================= CX-5 2021.5 (changes only — no spec deck) ================= */
+    {
+      id: "cx5-20215", model: "CX-5", year: "2021.5", changesOnly: true,
+      note: "<strong>No Specifications &amp; Features PDF was found for the 2021.5 CX-5</strong> — this panel is built from Mazda Canada's own May 12, 2021 mid-year update release only. It lists what <em>changed</em> versus the 2021 deck above; per the release, everything else carries over (“GT and Signature models carry over with no additional changes”). Anything the release doesn't name is marked unverified, not filled in.",
+      msrpNote: "MSRP from the May 12, 2021 release price table. Excludes $1,950 freight & PDE and $100 A/C surcharge.",
+      foot: ["The 100th Anniversary Edition is not listed in the 2021.5 price table — presumed discontinued at mid-year (unverified).",
+             "The release wording on GS 19″ wheels — “newly available … previously reserved for higher trim levels” — does not state whether they replace the Comfort Package wheel or are a standalone option; flagged ambiguous."],
+      cols: [
+        { name: "GX", sub: "2.5L NA · FWD std, AWD opt", msrp: "$28,950", msrpSub: "$30,450 with AWD" },
+        { name: "GS", sub: "2.5L CD · FWD std, AWD opt", msrp: "$32,150", msrpSub: "$33,650 AWD · $35,150 AWD + Comfort" },
+        { name: "Kuro Edition", sub: "2.5L CD · AWD", msrp: "$36,950", msrpSub: "" },
+        { name: "GT", sub: "2.5L CD / 2.5L Turbo · AWD", msrp: "$38,350", msrpSub: "$40,500 GT Turbo" },
+        { name: "Signature", sub: "2.5L Turbo · AWD", msrp: "$42,750", msrpSub: "" }
+      ],
+      groups: [
+        { g: "What changed at 2021.5", rows: [
+          ["Cylinder deactivation (unchanged)", "NO", "YES", "YES", "YES||GT non-turbo · turbo: No", "NO||turbo engine"],
+          ["Centre display", "N:10.25″ · latest-gen Mazda Connect", "N:10.25″ · latest-gen Mazda Connect", "N:10.25″ · latest-gen Mazda Connect", "N:10.25″ · latest-gen Mazda Connect", "N:10.25″ · latest-gen Mazda Connect"],
+          ["Mazda Connected Services", "N:Added · free trial, from Fall 2021", "N:Added · free trial, from Fall 2021", "N:Added · free trial, from Fall 2021", "N:Added · free trial, from Fall 2021", "N:Added · free trial, from Fall 2021"],
+          ["GX full i-Activsense (MRCC Stop & Go, Smart Brake Support, pedestrian detection, lane-keep, lane departure warning, high beam control)", "N:Added to GX", X + "||already standard", X + "||already standard", X + "||already standard", X + "||already standard"],
+          ["Distance Recognition / Forward Obstruction Warning on GX", "U:Not named in the release (“and more”)", S, S, S, S],
+          ["19″ wheels", X, "N:Newly available on GS with AWD||packaging ambiguous — see note", S, S, S],
+          ["Interior option", X, X, "N:Black leather with red stitching added||Garnet Red leather kept", X, X],
+          ["Wireless Apple CarPlay", X, X, X, "R:Removed with the new Mazda Connect||wired CarPlay / Android Auto remain", "U:Not stated for Signature in the release"]
+        ]}
+      ]
+    },
+    /* ================= CX-5 2022 ================= */
+    {
+      id: "cx5-2022", model: "CX-5", year: "2022",
+      note: "Source: Mazda Canada <strong>2022 CX-5 Specifications &amp; Features</strong> deck (issued Dec 2, 2021) — the facelift year. <strong>AWD is standard on every column</strong>, a new <strong>Sport Design</strong> trim replaces the GT Turbo / 100th structure, and the GX finally gets the full safety suite as standard.",
+      msrpNote: "Two prices exist for 2022: the Nov 30, 2021 launch release (smaller figure) and the spec deck effective May 3, 2022 (shown). Excludes $1,950 freight & PDE and $100 A/C surcharge.",
+      foot: ["GT delete variant: a “standard sound, without SiriusXM” build was offered at $38,850 in the deck — 6 speakers instead of Bose 10, no SiriusXM (−$400). Verify the actual build on any 2022 GT.",
+             "Conflict: the Nov 30, 2021 release lists Mazda Advanced Keyless Entry among GS additions; the spec deck's Equipment Walk places it only in the GS Comfort Package (as in 2020–2021). The deck is treated as authoritative here.",
+             "* Navigation-ready: requires the SD-card accessory."],
+      cols: [
+        { name: "GX", sub: "2.5L NA · 187 hp · AWD std", msrp: "$30,500", msrpSub: "launch $30,200" },
+        { name: "GS", sub: "2.5L CD · AWD std", msrp: "$34,200", msrpSub: "$36,300 with Comfort Pkg · launch $33,900 / $36,000" },
+        { name: "Kuro Edition", sub: "2.5L CD · AWD std", msrp: "$38,000", msrpSub: "launch $37,700" },
+        { name: "GT", sub: "2.5L CD · AWD std", msrp: "$39,250", msrpSub: "launch $38,950 · delete variant $38,850" },
+        { name: "Sport Design", sub: "2.5L CD · AWD std · new trim", msrp: "$40,450", msrpSub: "launch $40,150" },
+        { name: "Sport Design Turbo", sub: "2.5L Turbo · AWD std", msrp: "$42,650", msrpSub: "launch $42,350 · turbo = $2,200 option" },
+        { name: "Signature", sub: "2.5L Turbo · AWD std", msrp: "$43,650", msrpSub: "launch $43,350" }
+      ],
+      groups: [
+        { g: "Powertrain", rows: [
+          ["Cylinder deactivation", "NO", "YES", "YES", "YES", "YES", "NO||turbo engine", "NO||turbo engine"],
+          ["Engine", "2.5L NA · 187 hp", "2.5L NA · 187 hp", "2.5L NA · 187 hp", "2.5L NA · 187 hp", "2.5L NA · 187 hp", "2.5L Turbo · 256 hp (93 oct) / 227 (87)", "2.5L Turbo · 256 hp (93 oct) / 227 (87)"],
+          ["Transmission", "6-speed auto · more responsive tuning (facelift)", "6-speed auto", "6-speed auto", "6-speed auto", "6-speed auto", "6-speed auto", "6-speed auto"],
+          ["All-wheel drive", S + "||standard — FWD dropped", S, S, S, S, S, S],
+          ["Mi-Drive (Normal / Sport / Off-Road)", X + "||Drive Selection switch + Off-Road Traction Assist", X + "||Drive Selection switch + Off-Road Traction Assist", S + "||Mi-Drive introduced", S + "||with Off-Road Mode", S, S, S],
+          ["Paddle shifters", X, X, X, X, X, S + "||with turbo", S]
+        ]},
+        { g: "Wheels & exterior", rows: [
+          ["Wheels", "17″ silver · new design", "17″||19″ moved into Comfort Pkg", "19″ black metallic", "19″", "19″ black metallic", "19″ black", "19″ light-grey high-lustre · new design"],
+          ["LED headlights", S + "||new rectangular design, all trims", S, S, S + "||+ signature lighting", S, S, S],
+          ["Separate fog lamps", X + "||fog function integrated into headlights", X, X, X, X, X, X],
+          ["Adaptive Front-lighting System (AFS)", X, X, X, S, S, S, S],
+          ["Power-folding mirrors", X, X, X, S, S, S, S],
+          ["Power liftgate", X, S, S, S, S, S, S],
+          ["Moonroof", X, "O:Comfort Pkg", S, S, S, S, S],
+          ["Facelift styling (new grille, bumpers, tailgate, larger tailpipes)", S + "||all trims", S, S, S, S + "||gloss-black trim + red grille accent", S, S + "||body-colour cladding"]
+        ]},
+        { g: "Infotainment", rows: [
+          ["Centre display", "10.25″ · Mazda Connect", "10.25″ · Mazda Connect", "10.25″ · Mazda Connect", "10.25″ · Mazda Connect", "10.25″ · Mazda Connect", "10.25″ · Mazda Connect", "10.25″ · Mazda Connect"],
+          ["Mazda Connected Services", S + "||2-year trial", S, S, S, S, S, S],
+          ["Speakers", "4", "6", "6", "10 · Bose||delete variant: 6 speakers", "10 · Bose", "10 · Bose", "10 · Bose"],
+          ["SiriusXM", X, X, X, S + "||delete variant: none", S, S, S],
+          ["Navigation", "Ready*", "Ready*", X, S, S, S, S],
+          ["Wireless phone charging (Qi)", X, X, X, S + "||new for 2022", S, S, S]
+        ]},
+        { g: "Comfort & interior", rows: [
+          ["Seat material", "Cloth", "Leatherette + Grand Lux Suede", "Garnet Red or Black leather||Black is a $200 option", "Leather||Pure White is a $200 option", "Black leather · red stitching", "Black leather · red stitching", "Cocoa Nappa leather"],
+          ["Heated front seats", S, S, S, S, S, S, S],
+          ["Heated rear seats", X, X, X, S, S, S, S],
+          ["Heated steering wheel", X, S, S, S, S, S, S],
+          ["Driver seat adjustment", "6-way manual", "6-way power", "10-way power · memory||7″ LCD meter set", "10-way power · memory", "10-way power · memory", "10-way power · memory", "10-way power · memory"],
+          ["Dual-zone climate control", X, "O:Comfort Pkg||pkg also adds 19″ wheels + reversible trunk board", S, S, S, S, S],
+          ["Rear console vents", X, "O:Comfort Pkg", S, S, S, S, S],
+          ["Head-up display (Active Driving Display)", X, X, X, S, S, S, S],
+          ["Seats & chassis (facelift)", S + "||redesigned seats, revised damping & frame rigidity — all trims", S, S, S, S, S, S]
+        ]},
+        { g: "Safety — i-Activsense, feature by feature", rows: [
+          ["Adaptive cruise (MRCC) with Stop & Go", S + "||now standard on GX", S, S, S, S, S, S],
+          ["Smart City Brake Support — front", S, S, S, S, S, S, S],
+          ["Smart Brake Support — front", S, S, S, S, S, S, S],
+          ["Pedestrian detection", S, S, S, S, S, S, S],
+          ["Distance Recognition Support System (DRSS)", S, S, S, S, S, S, S],
+          ["Forward Obstruction Warning", S, S, S, S, S, S, S],
+          ["Blind Spot Monitoring", S, S, S, S, S, S, S],
+          ["Rear Cross-Traffic Alert", S, S, S, S, S, S, S],
+          ["Lane Departure Warning", S, S, S, S, S, S, S],
+          ["Lane-Keep Assist", S, S, S, S, S, S, S],
+          ["High Beam Control", S, S, S, S, S, S, S],
+          ["Driver Attention Alert", X, X, X, X, X, X, S],
+          ["Traffic Sign Recognition", X, X, X, S, S, S, S],
+          ["Traffic Jam Assist", X, X, X, X, S, S, S],
+          ["360° View Monitor", X, X, X, X, X, X, S],
+          ["Parking sensors", X, X, X, X, X, X, "Front & rear"],
+          ["Smart City Brake Support — rear", X, X, X, X, X, X, S]
+        ]}
+      ]
+    }
+    ];
+
+    DATASETS.push(
+    /* ================= CX-30 2020 ================= */
+    {
+      id: "cx30-2020", model: "CX-30", year: "2020",
+      note: "Source: Mazda Canada <strong>2020 CX-30 Specifications and Pricing</strong> deck (issued Dec 10, 2019). Only three trims, and the split that matters: the <strong>GT is the only CX-30 of 2020–2022 with cylinder deactivation</strong>, while the GX gets almost none of the active safety suite.",
+      msrpNote: "MSRP from the spec deck, effective Dec 3, 2019. Excludes $1,950 freight & PDE and $100 A/C surcharge.",
+      foot: ["GS Luxury Package 2020 ($1,900; the price page lists it only combined with AWD GS, at $30,550): leatherette upholstery, 10-way power driver seat with lumbar, driver-seat memory, power glass moonroof, auto-dimming rearview mirror. The 2020 deck's Luxury description does not list mirror reverse-tilt / memory link — those appear as GT items; check individual cars.",
+             "* Navigation-ready: requires the SD-card accessory."],
+      cols: [
+        { name: "GX", sub: "2.0L · 155 hp · FWD std, AWD opt", msrp: "$23,950", msrpSub: "$25,950 with AWD" },
+        { name: "GS", sub: "2.5L · 186 hp, no CD · FWD std, AWD opt", msrp: "$26,650", msrpSub: "$28,650 AWD · $30,550 AWD + Luxury Pkg" },
+        { name: "GT", sub: "2.5L CD · AWD only", msrp: "$33,850", msrpSub: "" }
+      ],
+      groups: [
+        { g: "Powertrain", rows: [
+          ["Cylinder deactivation", "NO", "NO", "YES||the only CD CX-30 of 2020–2022"],
+          ["Engine", "2.0L · 155 hp", "2.5L · 186 hp", "2.5L · 186 hp"],
+          ["Transmission", "6-speed auto · Drive Selection · G-Vectoring Control Plus", "6-speed auto · Drive Selection · G-Vectoring Control Plus", "6-speed auto · Drive Selection · G-Vectoring Control Plus"],
+          ["All-wheel drive", "O:$2,000 option", "O:option", S + "||AWD only"],
+          ["Paddle shifters", X, X, S],
+          ["Off-Road Traction Assist", "O:with AWD", "O:with AWD", S]
+        ]},
+        { g: "Wheels & exterior", rows: [
+          ["Wheels", "16″ dark grey", "18″ silver", "18″ gunmetal"],
+          ["LED headlights / DRL / taillights", S, S, S],
+          ["Signature lighting · auto-levelling · AFS", X, X, S],
+          ["Automatic headlights", "Auto-off only", S + "||auto on/off", S],
+          ["Rain-sensing wipers", X + "||variable intermittent", S, S],
+          ["Heated side mirrors", X, S, S],
+          ["Power-folding mirrors", X, X, X],
+          ["Driver mirror: auto-dim, reverse-tilt, memory link", X, X, S],
+          ["Power liftgate", X, X, S],
+          ["Moonroof", X, "O:Luxury Pkg", S]
+        ]},
+        { g: "Infotainment", rows: [
+          ["Centre display", "8.8″ Mazda Connect||commander knob · non-touch", "8.8″ Mazda Connect", "8.8″ Mazda Connect"],
+          ["Apple CarPlay / Android Auto", S + "||wired", S + "||wired", S + "||wired"],
+          ["Speakers", "8 · Mazda Harmonic Acoustics", "8 · Mazda Harmonic Acoustics", "12 · Bose"],
+          ["SiriusXM", X, X, S],
+          ["Navigation", "Ready*", "Ready*", S],
+          ["Mazda Connected Services", X, X, X],
+          ["USB ports", "2 front", "2 front", "2 front"]
+        ]},
+        { g: "Comfort & interior", rows: [
+          ["Seat material", "Cloth", "Cloth||Leatherette with Luxury Pkg", "Leather"],
+          ["Heated front seats", S, S, S],
+          ["Heated rear seats", X, X, X + "||not offered on any CX-30"],
+          ["Heated steering wheel", X, S, S],
+          ["Driver seat adjustment", "8-way manual", "8-way manual||10-way power + lumbar + memory with Luxury Pkg", "10-way power · lumbar · memory"],
+          ["Climate control", "Manual", "Dual-zone||+ rear console vents", "Dual-zone"],
+          ["Head-up display (Active Driving Display)", X, X, S],
+          ["Auto-dimming rearview mirror", X, "O:Luxury Pkg", S + "||frameless"],
+          ["Leather steering wheel & shift knob", X, S, S],
+          ["Advanced Keyless Entry", X + "||fob keyless entry", X, S]
+        ]},
+        { g: "Safety — i-Activsense, feature by feature", rows: [
+          ["Adaptive cruise (MRCC) with Stop & Go", X, S, S],
+          ["Smart Brake Support — front", X, S, S],
+          ["Smart City Brake Support", X, S, S],
+          ["Pedestrian detection", X, S, S],
+          ["Distance Recognition Support System (DRSS)", X, S, S],
+          ["Forward Obstruction Warning", X, S, S],
+          ["Blind Spot Monitoring", S, S, S],
+          ["Rear Cross-Traffic Alert", S, S, S],
+          ["Lane Departure Warning", X, S, S],
+          ["Lane-Keep Assist", X, S, S],
+          ["High Beam Control", X, S, S],
+          ["Driver Attention Alert", X, S, S],
+          ["Traffic Sign Recognition", X, X, S],
+          ["Rear-view camera", S, S, S],
+          ["Parking sensors", X, X, "Rear only||no front sensors, no 360°"],
+          ["Smart Brake Support — rear", X, X, S],
+          ["Smart Brake Support — rear crossing", X, X, S]
+        ]}
+      ]
+    },
+    /* ================= CX-30 2021 ================= */
+    {
+      id: "cx30-2021", model: "CX-30", year: "2021",
+      note: "Source: Mazda Canada <strong>2021 CX-30 Specifications &amp; Features</strong> deck (issued Sep 18, 2020). Two headline changes: <strong>cylinder deactivation is dropped carline-wide</strong> (the deck says so verbatim for the GT), and a <strong>GT Turbo option</strong> is added. Everything else is the 2020 walk, with auto headlights and rain-sensing wipers moved down to the GX.",
+      msrpNote: "MSRP from the spec deck, effective May 1, 2021. Excludes $1,950 freight & PDE and $100 A/C surcharge.",
+      foot: ["GS Luxury Package 2021 ($1,900): the 2020 contents plus exterior mirrors with reverse-tilt-down and memory-seat link, per the deck's package description. Stitch colour changes from warm silver to dark grey for November production."],
+      cols: [
+        { name: "GX", sub: "2.0L · 155 hp · FWD std, AWD opt", msrp: "$24,700", msrpSub: "$26,200 with AWD" },
+        { name: "GS", sub: "2.5L · 186 hp · FWD std, AWD opt", msrp: "$27,500", msrpSub: "$29,000 AWD · $30,900 AWD + Luxury Pkg" },
+        { name: "GT", sub: "2.5L · 186 hp · AWD only", msrp: "$34,000", msrpSub: "" },
+        { name: "GT Turbo", sub: "2.5L Turbo · AWD only · new option", msrp: "$36,400", msrpSub: "turbo = $2,400 option on GT" }
+      ],
+      groups: [
+        { g: "Powertrain", rows: [
+          ["Cylinder deactivation", "NO", "NO", "NO||CD dropped for 2021", "NO||turbo engine"],
+          ["Engine", "2.0L · 155 hp", "2.5L · 186 hp", "2.5L · 186 hp", "2.5L Turbo"],
+          ["Transmission", "6-speed auto · Drive Selection · G-Vectoring Control Plus", "6-speed auto · Drive Selection · G-Vectoring Control Plus", "6-speed auto · Drive Selection · G-Vectoring Control Plus", "6-speed auto · Drive Selection · G-Vectoring Control Plus"],
+          ["All-wheel drive", "O:$1,500 option", "O:option", S + "||AWD only", S],
+          ["Paddle shifters", X, X, S, S],
+          ["Off-Road Traction Assist", "O:with AWD", "O:with AWD", S, S],
+          ["Turbo styling (black-finish wheels, Jet Black Mica mirrors, larger exhaust, Turbo badges)", X, X, X, S]
+        ]},
+        { g: "Wheels & exterior", rows: [
+          ["Wheels", "16″ dark grey", "18″ silver", "18″ gunmetal", "18″ black finish"],
+          ["LED headlights / DRL / taillights", S, S, S, S],
+          ["Signature lighting · auto-levelling · AFS", X, X, S, S],
+          ["Automatic headlights", S + "||auto on/off — moved down from GS", S, S, S],
+          ["Rain-sensing wipers", S + "||moved down from GS", S, S, S],
+          ["Heated side mirrors", X, S, S, S],
+          ["Power-folding mirrors", X, X, X, X],
+          ["Driver mirror: auto-dim, reverse-tilt, memory link", X, X, S, S],
+          ["Power liftgate", X, X, S, S],
+          ["Moonroof", X, "O:Luxury Pkg", S, S]
+        ]},
+        { g: "Infotainment", rows: [
+          ["Centre display", "8.8″ Mazda Connect||commander knob · non-touch", "8.8″ Mazda Connect", "8.8″ Mazda Connect", "8.8″ Mazda Connect"],
+          ["Apple CarPlay / Android Auto", S + "||wired", S + "||wired", S + "||wired", S + "||wired"],
+          ["Speakers", "8 · Mazda Harmonic Acoustics", "8 · Mazda Harmonic Acoustics", "12 · Bose", "12 · Bose"],
+          ["SiriusXM", X, X, S, S],
+          ["Navigation", "Ready*", "Ready*", S, S],
+          ["Mazda Connected Services", X, X, X, X + "||arrives in 2022"],
+          ["USB ports", "2 front", "2 front", "2 front", "2 front"]
+        ]},
+        { g: "Comfort & interior", rows: [
+          ["Seat material", "Cloth", "Cloth||Leatherette with Luxury Pkg", "Leather", "Leather"],
+          ["Heated front seats", S, S, S, S],
+          ["Heated rear seats", X, X, X, X + "||not offered on any CX-30"],
+          ["Heated steering wheel", X, S, S, S],
+          ["Driver seat adjustment", "8-way manual", "8-way manual||10-way power + lumbar + memory with Luxury Pkg", "10-way power · lumbar · memory", "10-way power · lumbar · memory"],
+          ["Climate control", "Manual", "Dual-zone||+ rear console vents", "Dual-zone", "Dual-zone"],
+          ["Head-up display (Active Driving Display)", X, X, X, S, S],
+          ["Auto-dimming rearview mirror", X, "O:Luxury Pkg", S + "||frameless", S],
+          ["Leather steering wheel & shift knob", X, S, S, S],
+          ["Advanced Keyless Entry", X + "||fob keyless entry", X, S, S]
+        ]},
+        { g: "Safety — i-Activsense, feature by feature", rows: [
+          ["Adaptive cruise (MRCC) with Stop & Go", X, S, S, S],
+          ["Smart Brake Support — front", X, S, S, S],
+          ["Smart City Brake Support", X, S, S, S],
+          ["Pedestrian detection", X, S, S, S],
+          ["Distance Recognition Support System (DRSS)", X, S, S, S],
+          ["Forward Obstruction Warning", X, S, S, S],
+          ["Blind Spot Monitoring", S, S, S, S],
+          ["Rear Cross-Traffic Alert", S, S, S, S],
+          ["Lane Departure Warning", X, S, S, S],
+          ["Lane-Keep Assist", X, S, S, S],
+          ["High Beam Control", X, S, S, S],
+          ["Driver Attention Alert", X, S, S, S],
+          ["Traffic Sign Recognition", X, X, S, S],
+          ["Rear-view camera", S, S, S, S],
+          ["Parking sensors", X, X, "Rear only||no front sensors, no 360°", "Rear only"],
+          ["Smart Brake Support — rear", X, X, S, S],
+          ["Smart Brake Support — rear crossing", X, X, S, S]
+        ]}
+      ]
+    },
+    /* ================= CX-30 2022 ================= */
+    {
+      id: "cx30-2022", model: "CX-30", year: "2022",
+      note: "Source: Mazda Canada <strong>2022 CX-30 Specifications &amp; Features</strong> deck (issued Feb 22, 2022). <strong>AWD and Off-Road Traction Assist are standard on every column</strong> (FWD dropped), Connected Services arrives, and the GT gains an optional <strong>Advanced Visibility Package</strong> — the CX-30's first 360° camera — which the Turbo requires.",
+      msrpNote: "Two prices exist for 2022: the Jan 4, 2022 launch release (smaller figure) and the spec deck effective May 3, 2022 (shown). Excludes $1,950 freight & PDE and $100 A/C surcharge.",
+      foot: ["GT Advanced Visibility Package ($800): 360° View Monitor, front parking sensors, Traffic Jam Assist. The GT Turbo option requires it — the turbo's price includes it.",
+             "GT delete variant: a “Mazda Harmonic Acoustics, without SiriusXM” build was offered at −$400 — 8 speakers instead of Bose 12, no SiriusXM. Verify the actual build on any 2022 GT.",
+             "Colours for 2022: Platinum Quartz Metallic added (GS/GT), Garnet Red leather added as a GT interior option, Titanium Flash Mica removed. GS Luxury Package is now $2,200 (was $1,900)."],
+      cols: [
+        { name: "GX", sub: "2.0L · 155 hp · AWD std", msrp: "$26,350", msrpSub: "launch $26,100" },
+        { name: "GS", sub: "2.5L · 186 hp · AWD std", msrp: "$29,350", msrpSub: "$31,550 with Luxury Pkg · launch $29,100 / $31,300" },
+        { name: "GT", sub: "2.5L · 186 hp · AWD std", msrp: "$34,750", msrpSub: "$35,550 with Advanced Visibility Pkg · launch $34,500 / $35,300" },
+        { name: "GT Turbo", sub: "2.5L Turbo · AWD std", msrp: "$37,950", msrpSub: "launch $37,700 · incl. Advanced Visibility Pkg" }
+      ],
+      groups: [
+        { g: "Powertrain", rows: [
+          ["Cylinder deactivation", "NO", "NO", "NO", "NO||turbo engine"],
+          ["Engine", "2.0L · 155 hp", "2.5L · 186 hp", "2.5L · 186 hp", "2.5L Turbo"],
+          ["Transmission", "6-speed auto · Drive Selection · G-Vectoring Control Plus", "6-speed auto · Drive Selection · G-Vectoring Control Plus", "6-speed auto · Drive Selection · G-Vectoring Control Plus", "6-speed auto · Drive Selection · G-Vectoring Control Plus"],
+          ["All-wheel drive", S + "||standard — FWD dropped", S, S, S],
+          ["Paddle shifters", X, X, S, S],
+          ["Off-Road Traction Assist", S + "||standard on all trims", S, S, S]
+        ]},
+        { g: "Wheels & exterior", rows: [
+          ["Wheels", "16″ dark grey", "18″ silver", "18″ gunmetal", "18″ black finish"],
+          ["LED headlights / DRL / taillights", S, S, S, S],
+          ["Signature lighting · auto-levelling · AFS", X, X, S, S],
+          ["Automatic headlights", S + "||auto on/off", S, S, S],
+          ["Rain-sensing wipers", S, S, S, S],
+          ["Heated side mirrors", X, S, S, S],
+          ["Power-folding mirrors", X, X, X, X],
+          ["Driver mirror: auto-dim, reverse-tilt, memory link", X, X, S, S],
+          ["Power liftgate", X, X, S, S],
+          ["Moonroof", X, "O:Luxury Pkg ($2,200)", S, S]
+        ]},
+        { g: "Infotainment", rows: [
+          ["Centre display", "8.8″ Mazda Connect||commander knob · non-touch", "8.8″ Mazda Connect", "8.8″ Mazda Connect", "8.8″ Mazda Connect"],
+          ["Apple CarPlay / Android Auto", S + "||wired", S + "||wired", S + "||wired", S + "||wired"],
+          ["Speakers", "8 · Mazda Harmonic Acoustics", "8 · Mazda Harmonic Acoustics", "12 · Bose||delete variant: 8-spk Harmonic", "12 · Bose"],
+          ["SiriusXM", X, X, S + "||delete variant: none", S],
+          ["Navigation", "Ready*", "Ready*", S, S],
+          ["Mazda Connected Services", S + "||2-year trial — new for 2022", S, S, S],
+          ["USB ports", "2 front", "2 front", "2 front", "2 front"]
+        ]},
+        { g: "Comfort & interior", rows: [
+          ["Seat material", "Cloth", "Cloth||Leatherette with Luxury Pkg", "Leather||Garnet Red leather option added", "Leather"],
+          ["Heated front seats", S, S, S, S],
+          ["Heated rear seats", X, X, X, X + "||not offered on any CX-30"],
+          ["Heated steering wheel", X, S, S, S],
+          ["Driver seat adjustment", "8-way manual", "8-way manual||10-way power + lumbar + memory with Luxury Pkg", "10-way power · lumbar · memory", "10-way power · lumbar · memory"],
+          ["Climate control", "Manual", "Dual-zone||+ rear console vents", "Dual-zone", "Dual-zone"],
+          ["Head-up display (Active Driving Display)", X, X, S, S],
+          ["Auto-dimming rearview mirror", X, "O:Luxury Pkg ($2,200)", S + "||frameless", S],
+          ["Leather steering wheel & shift knob", X, S, S, S],
+          ["Advanced Keyless Entry", X + "||fob keyless entry", X, S, S]
+        ]},
+        { g: "Safety — i-Activsense, feature by feature", rows: [
+          ["Adaptive cruise (MRCC) with Stop & Go", X, S, S, S],
+          ["Smart Brake Support — front", X, S, S, S],
+          ["Smart City Brake Support", X, S, S, S],
+          ["Pedestrian detection", X, S, S, S],
+          ["Distance Recognition Support System (DRSS)", X, S, S, S],
+          ["Forward Obstruction Warning", X, S, S, S],
+          ["Blind Spot Monitoring", S, S, S, S],
+          ["Rear Cross-Traffic Alert", S, S, S, S],
+          ["Lane Departure Warning", X, S, S, S],
+          ["Lane-Keep Assist", X, S, S, S],
+          ["High Beam Control", X, S, S, S],
+          ["Driver Attention Alert", X, S, S, S],
+          ["Traffic Sign Recognition", X, X, S, S],
+          ["Traffic Jam Assist", X, X, "O:Advanced Visibility Pkg", S + "||included with turbo"],
+          ["Rear-view camera", S, S, S, S],
+          ["360° View Monitor", X, X, "O:Advanced Visibility Pkg", S + "||included with turbo"],
+          ["Parking sensors", X, X, "Rear||front sensors in Advanced Visibility Pkg", "Front & rear"],
+          ["Smart Brake Support — rear", X, X, S, S],
+          ["Smart Brake Support — rear crossing", X, X, S, S]
+        ]}
+      ]
+    }
+    );
+
+    /* ================= rendering ================= */
+    function splitNote(v) {
+      var i = v.indexOf("||");
+      if (i === -1) return { main: v, note: "" };
+      return { main: v.slice(0, i), note: v.slice(i + 2) };
+    }
+    function esc(s) {
+      return s.replace(/&/g, "&amp;").replace(/</g, "&lt;");
+    }
+    function cellHTML(v) {
+      var p = splitNote(v), m = p.main, out = "";
+      if (m === "✓") out = '<span class="c-std" aria-label="Standard">✓</span>';
+      else if (m === "—") out = '<span class="c-dash" aria-label="Not available">—</span>';
+      else if (m === "YES") out = '<span class="b b-yes">Yes</span>';
+      else if (m === "NO") out = '<span class="b b-no">No</span>';
+      else if (m.indexOf("O:") === 0) out = '<span class="b b-opt">Pkg</span> ' + esc(m.slice(2));
+      else if (m.indexOf("N:") === 0) out = '<span class="b b-new">New</span> ' + esc(m.slice(2));
+      else if (m.indexOf("R:") === 0) out = '<span class="b b-yes">Removed</span> ' + esc(m.slice(2));
+      else if (m.indexOf("U:") === 0) out = '<span class="b b-unv">Unverified</span> ' + esc(m.slice(2));
+      else out = esc(m);
+      if (p.note) out += '<span class="cell-note">' + esc(p.note) + "</span>";
+      return out;
+    }
+
+    var tabsEl = document.getElementById("tabs");
+    var panelsEl = document.getElementById("panels");
+
+    DATASETS.forEach(function (ds, di) {
+      var tab = document.createElement("button");
+      tab.className = "tab";
+      tab.setAttribute("role", "tab");
+      tab.id = "tab-" + ds.id;
+      tab.setAttribute("aria-selected", di === 0 ? "true" : "false");
+      tab.innerHTML = ds.model + ' <span class="yr">' + ds.year + "</span>";
+      tab.addEventListener("click", function () { selectTab(ds.id); });
+      tabsEl.appendChild(tab);
+
+      var panel = document.createElement("div");
+      panel.id = "panel-" + ds.id;
+      panel.setAttribute("role", "tabpanel");
+      if (di !== 0) panel.className = "hidden-panel";
+
+      var visible = ds.cols.map(function () { return true; });
+
+      var html = "";
+      html += '<p class="panel-note">' + ds.note + "</p>";
+      html += '<div class="toolbar"><span class="lbl">Compare trims:</span><div class="chips">';
+      ds.cols.forEach(function (c, ci) {
+        html += '<button type="button" class="chip" data-col="' + ci + '" aria-pressed="true">' + esc(c.name) + "</button>";
+      });
+      html += '</div><input type="search" class="search" placeholder="Filter features — try “moonroof” or “brake”" aria-label="Filter features in this table" /></div>';
+
+      html += '<div class="table-scroll"><table class="matrix"><thead><tr><th class="feat-head" scope="col">Feature</th>';
+      ds.cols.forEach(function (c, ci) {
+        html += '<th scope="col" data-col="' + ci + '"><span class="trim-name">' + esc(c.name) + '</span>' +
+                '<span class="trim-sub">' + esc(c.sub) + '</span>' +
+                '<span class="trim-msrp num">' + esc(c.msrp) + (c.msrpSub ? "<small>" + esc(c.msrpSub) + "</small>" : "") + "</span></th>";
+      });
+      html += "</tr></thead><tbody>";
+      ds.groups.forEach(function (grp) {
+        html += '<tr class="grp"><td colspan="' + (ds.cols.length + 1) + '">' + esc(grp.g) + "</td></tr>";
+        grp.rows.forEach(function (row) {
+          var isCD = row[0].toLowerCase().indexOf("cylinder deactivation") === 0;
+          html += '<tr class="feat-row' + (isCD ? " cd-row" : "") + '"><th class="feat" scope="row">' + esc(row[0]) + "</th>";
+          for (var ci = 1; ci < row.length; ci++) {
+            html += '<td data-col="' + (ci - 1) + '">' + cellHTML(row[ci]) + "</td>";
+          }
+          html += "</tr>";
+        });
+      });
+      html += "</tbody></table><div class=\"noresults\">No feature in this table matches that filter. Try a shorter term — e.g. “brake”, “seat”, “screen”.</div></div>";
+      html += '<p class="msrp-note">' + ds.msrpNote + "</p>";
+      if (ds.foot && ds.foot.length) {
+        html += '<ul class="table-foot">';
+        ds.foot.forEach(function (f) { html += "<li>" + f + "</li>"; });
+        html += "</ul>";
+      }
+      panel.innerHTML = html;
+      panelsEl.appendChild(panel);
+
+      /* column toggle */
+      var chips = panel.querySelectorAll(".chip");
+      function applyCols() {
+        var visCount = visible.filter(Boolean).length;
+        panel.querySelectorAll("table.matrix [data-col]").forEach(function (el) {
+          el.style.display = visible[+el.getAttribute("data-col")] ? "" : "none";
+        });
+        panel.querySelectorAll("tr.grp td").forEach(function (td) { td.colSpan = visCount + 1; });
+        chips.forEach(function (chip, ci) { chip.setAttribute("aria-pressed", visible[ci] ? "true" : "false"); });
+      }
+      chips.forEach(function (chip, ci) {
+        chip.addEventListener("click", function () {
+          var onCount = visible.filter(Boolean).length;
+          if (visible[ci] && onCount === 1) return; /* keep at least one column */
+          visible[ci] = !visible[ci];
+          applyCols();
+        });
+      });
+
+      /* feature filter */
+      var search = panel.querySelector(".search");
+      var noRes = panel.querySelector(".noresults");
+      search.addEventListener("input", function () {
+        var q = search.value.trim().toLowerCase();
+        var anyVisible = false;
+        panel.querySelectorAll("tbody tr").forEach(function (tr) {
+          if (tr.classList.contains("grp")) { tr.dataset.hiddenByFilter = ""; return; }
+          var feat = tr.querySelector("th.feat").textContent.toLowerCase();
+          var show = !q || feat.indexOf(q) !== -1;
+          tr.style.display = show ? "" : "none";
+          if (show) anyVisible = true;
+        });
+        /* hide group headers with no visible rows under them */
+        var currentGrp = null, grpHas = false;
+        panel.querySelectorAll("tbody tr").forEach(function (tr) {
+          if (tr.classList.contains("grp")) {
+            if (currentGrp) currentGrp.style.display = grpHas ? "" : "none";
+            currentGrp = tr; grpHas = false;
+          } else if (tr.style.display !== "none") grpHas = true;
+        });
+        if (currentGrp) currentGrp.style.display = grpHas ? "" : "none";
+        noRes.style.display = q && !anyVisible ? "block" : "none";
+      });
+    });
+
+    function selectTab(id) {
+      DATASETS.forEach(function (ds) {
+        document.getElementById("tab-" + ds.id).setAttribute("aria-selected", ds.id === id ? "true" : "false");
+        document.getElementById("panel-" + ds.id).classList.toggle("hidden-panel", ds.id !== id);
+      });
+    }
+    </script>
+  </body>
+</html>
